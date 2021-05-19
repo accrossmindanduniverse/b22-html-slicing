@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?  family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <style>
+
+    body {
+      font-family: Rubik;
+    }
+
+    .banner {
+      background-image: url('/assets/nathan-dumlao-XOhI_kW_TaM-unsplash\ 1.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 1430px;
+    }
+
+    .navbar {
+      position: relative;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+    }
+
+    .text-one-bg {
+      background-color: rgba(106, 64, 41, 1);
+    }
+
+    .user-border {
+      border: 3px solid rgba(106, 64, 41, 1);
+    }
+
+    .user-description {
+      width: 310px;
+      height: 500px;
+    }
+
+    .user-profile-box {
+      font-family: 'Rubik';
+      width: 310px;
+      height: 200px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+
+    .user-profile {
+      border-bottom: 15px solid rgba(106, 64, 41, 1) ;
+    }
+
+    #user-contacts {
+      position: absolute;
+      width: 800px;
+      left: 480px;
+      height: 500px;
+    }
+
+    .primary {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .user-contact-modal {
+      line-height: 50px;
+    }
+
+    .bottom-border {
+      border-bottom: 1px solid black;
+      width: 300px;
+    }
+
+    .bottom-border-2nd {
+      border-bottom: 1px solid black;
+      width: 500;
+    }
+
+    .primary-shadow {
+      text-shadow: 0px 15px 20px rgba(255, 255, 255, 0.26);
+    }
+
+    .user-details {
+      position: absolute;
+      width: 800px;
+      height: 500px;
+      bottom: -350px;
+      border-radius: 6px;
+    }
+
+    .radio-btn-label {
+      position: relative;
+      cursor: pointer;
+    }
+/* 
+    .radio-btn-label:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+
+    .radio-btn-label input:checked ~ .checkmark {
+      background-color: #FFBA33;
+    } */
+
+    /* .radio-btn-label  .checkmark:after {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    } */
+
+    /* .checkmark {
+      border: 2px solid rgba(106, 64, 41, 1);
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+    } */
+
+  </style>
+
+</head>
+<body>
+  
+  
+  <div class="banner">
+    
+    <div class="navbar relative">
+
+    <div class="flex">
+      <div class="flex-1 w-72 relative right-96">
+        <div class="float-left">
+          <img src="/assets/coffee 1.png" alt="">
+        </div>
+        <div class="pl-12">
+          <p class="font-bold text-xl">
+            Coffee Shop
+          </p>
+        </div>
+      </div>
+
+      <nav class="flex flex-row relative right-44">
+        <ul class="flex  flex-row">
+          <li class="w-24">
+            <a href="">Home</a>
+          </li>
+          <li class="w-24">
+            <a href="">Product</a>
+          </li>
+          <li class="w-24">
+            <a href="">Your Cart</a>
+          </li>
+          <li class="w-24">
+            <a href="">History</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="flex">
+        <div class="flex-1">
+          <em class="fas fa-search"></em>
+        </div>
+        <div class="flex-1 w-44 relative bottom-4">
+          <div class="flex justify-left relative right-1 items-start pb-l">
+            <div class="text-one-bg top-1 h-4 w-4 rounded-full text-center">
+              <p class="text-white text-sm relative">1</p>
+            </div>
+          </div>
+          <div class="flex items-center absolute">
+            <img src="/assets/chat (1) 1.png" alt="">
+          </div>
+        </div>
+        <div class="flex-1 relative bottom-1">
+            <img class="user-border  h-10 w-h-10 rounded-full" src="/assets/zulaikha.png" alt="">
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    <div class="pl-36 pt-52 flex">
+      <div class="user-profile-box flex justify-center">
+        <div class= "absolute top-52">
+          <p class="primary-shadow font-bold text-white text-4xl">User Profile</p>
+        </div>
+      </div>
+
+      <div class="primary user-profile flex-1 absolute bg-white user-description justify-center items-center rounded-lg">
+        <div class="flex-col relative justify-center items-center pl-24 pt-10">
+          <div class="flex-1">
+            <img class="h-15 w-15 rounded-full" src="/assets/zulaikha.png" alt="">
+            <div class="relative bottom-10 pl-20">
+              <button class="text-one-bg relative top-1 h-6 w-6 rounded-full text-center justify-center items-center">
+                <em class="fas fa-pen text-white text-sm"></em>
+              </button>
+            </div>
+          </div>
+          <div class="flex-col justify-center
+          items-center leading-9 pr-10 relative right-6">
+            <div class="text-center">
+              <p class="font-bold text-2xl">Zulaikha</p>
+            </div>
+            <div>
+              <p>zulaikha17@gmail.com</p>
+            </div>
+          </div>
+            <div class="flex-1 justify-center items-center w-56 right-12 relative pt-5">
+              <div class="relative text-center">
+                <p>Has been ordered 15 products</p>
+              </div>
+          </div>
+        </div>
+        <div>
+        </div>
+      </div>
+
+      <div id='user-contacts' class="user-profile primary flex-1 bg-white absolute justify-center items-center rounded-lg">
+        <div class="flex flex-col">
+
+          <div class="flex-1 flex flex-row pt-5">
+            <div class="flex-1 w-96 relative pl-10">
+              <p class="font-bold text-gray-600 text-2xl">Contacts</p>
+            </div>
+              <div id='contacts-pen' class="flex-1 flex justify-end items-end relative">
+                <div class="pr-5 pb-2">
+                    <button class="text-one-bg relative top-1 h-6 w-6 rounded-full text-center">
+                      <em class="fas fa-pen text-white text-xs"></em>
+                    </button>
+                </div>
+            </div>
+          </div>
+
+          <div class='flex-1 pt-5'>
+            <div class="flex flex-row h-96 pl-10">
+
+              <div class="flex-1">
+                <div class="user-contact-modal flex flex-col">
+                  <div class="flex-1">
+                    <div class="text-gray-400">
+                      <p>Email Address: </p>
+                    </div>
+                    <div class="bottom-border">
+                      <p>zulaikha17@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="flex-1 pt-36">
+                    <div class="text-gray-400">
+                      <p>Delivery Address:</p>
+                    </div>
+                    <div class="bottom-border-2nd">
+                      <p>Iskandar Street no. 67 Block A Near Bus Stop</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-1">
+                <div class="user-contact-modal">
+                  <div class="text-gray-400">
+                    <p>Mobile Number:</p>
+                  </div>
+                  <div class="bottom-border">
+                    <p>(+62)813456782</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="user-details border-2 bg-white flex-1">
+        <div class="flex flex-row">
+
+<!-- asdasdasd -->
+      <div class="flex flex-col">
+
+        <div class="flex-1 flex flex-row pt-5">
+          <div class="flex-1 w-96 relative pl-10">
+            <p class="font-bold text-gray-600 text-2xl">Details</p>
+          </div>
+            <div id='contacts-pen' class="flex-1 flex justify-end items-end relative">
+              <div class="pr-5 pb-2">
+                  <button class="text-one-bg relative top-1 h-6 w-6 rounded-full text-center">
+                    <em class="fas fa-pen text-white text-xs"></em>
+                  </button>
+              </div>
+          </div>
+        </div>
+
+        <div class='flex-1 pt-5'>
+          <div class="flex flex-row h-96 pl-10">
+
+            <div class="flex-1">
+              <div class="user-contact-modal flex flex-col">
+                <div class="flex-1">
+                  <div class="text-gray-400">
+                    <p>Display name: </p>
+                  </div>
+                  <div class="bottom-border">
+                    <p>Zulaikha</p>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <div class="text-gray-400">
+                    <p>First name:</p>
+                  </div>
+                  <div class="bottom-border-2nd">
+                    <p>Zulaikha</p>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <div class="text-gray-400">
+                    <p>Last name:</p>
+                  </div>
+                  <div class="bottom-border-2nd">
+                    <p>Nirmala</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-1 pl-20">
+
+              <div class="flex flex-col">
+
+                <div class="flex-1 user-contact-modal">
+                  <div class="text-gray-400">
+                    <p>Mobile Number:</p>
+                  </div>
+                  <div class="bottom-border">
+                    <p>(+62)813456782</p>
+                  </div>
+                </div>
+
+                <div class="flex-1 user-contact-modal pt-10">
+                  <div class="flex flex-col ">
+                    <label class="radio-btn-label">Male
+                      <input class="flex-1 radio-btn-input" name="radio" type="radio" checked="checked">
+                      <span class="checkmark w-10 h-10 rounded-full"></span>
+                    </label>
+                    <label class="radio-btn-label">Female
+                      <input class="flex-1 radio-btn-input" name="radio" type="radio">
+                      <span class="checkmark w-10 h-10 rounded-full"></span>
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+        </div>
+      </div>
+
+    </div>
+      
+    </div>
+
+</body>
+</html>
