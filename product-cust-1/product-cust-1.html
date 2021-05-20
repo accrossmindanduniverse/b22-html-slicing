@@ -1,31 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Product Customer</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?  family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <title>Document</title>
 
-  <style>
-    body {
-      background-color: antiquewhite;
-    }
+  <style> 
+  .navbar {
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+
+  .primary-brown {
+    color: rgba(106, 64, 41, 1);
+  }
+
+  .primary-brown-background {
+    background: rgba(106, 64, 41, 1);
+  }
+
+  .promo-container {
+    position: relative;
+  }
+
+  .box-1 {
+    position: absolute;
+    background: rgba(106, 64, 41, 1);
+    width: 340px;
+    height: 340px;
+    border-radius: 15px;
+  }
+
+  .box-2 {
+    position: absolute;
+    background: black;
+    width: 315px;
+    height: 402px;
+    border-radius: 15px;
+  }
+
+  .box-3 {
+    position: absolute;
+    background: rgba(255, 203, 101, 1);
+    width: 285px;
+    height: 472px;
+    border-radius: 15px;
+  }
+
+  .product-and-engage {
+    position: relative;
+    left: 135%;
+  }
+
+  .footer-bg {
+    background: #F8F8F8;
+  }
+
+  .text-one {
+    bottom: 1px;
+  }
+
+  .btn-brown {
+    width: 320px;
+  }
+
+  .dashed-border {
+    width: 276px;
+    border: black;
+    border-top-style: dashed;
+  }
+
+  .grid-product {
+    border-radius: 25px;
+  }
+
+  .nav-product a {
+    text-decoration: none;
+  }
+
+  .nav-product:hover {
+    border-bottom: 3px rgba(106, 64, 41, 1);
+  }
+
+  .nav-product .active {
+    border-bottom: 3px rgba(106, 64, 41, 1);
+  } 
+
   </style>
 
 </head>
+
 <body>
   
-  <div>
+  <div class="flex flex-col">
 
-    <div class="flex flex-row border-4">
-      <div class="flex bg-yellow-300 w-72 h-40">
-        <div class="flex-row justify-center text-center flex-row-2 w-10">
-          <img class="h-15 w-15 rounded-full bg-yellow-400" src="/assets/spaghetti.png" alt="">
+    <div class="navbar relative">
+
+      <div class="flex space-x-80">
+        <div class="flex-1 w-72 relative">
+          <div class="float-left">
+            <img src="/assets/coffee 1.png" alt="">
+          </div>
+          <div>
+            <p class="font-bold text-xl pl-12">
+              Coffee Shop
+            </p>
+          </div>
+        </div>
+  
+        <nav class="flex flex-row relative right-44">
+          <ul class="flex  flex-row">
+            <li class="w-24">
+              <a href="">Home</a>
+            </li>
+            <li class="w-24">
+              <a href="">Product</a>
+            </li>
+            <li class="w-24">
+              <a href="">Your Cart</a>
+            </li>
+            <li class="w-24">
+              <a href="">History</a>
+            </li>
+          </ul>
+        </nav>
+  
+        <div class="flex">
+          <div class="flex-1">
+            <em class="fas fa-search"></em>
+          </div>
+          <div class="flex-1 w-44 relative bottom-4">
+            <div class="flex items-center relative top-2">
+              <div class="primary-brown-background top-1 h-4 w-4 rounded-full text-center">
+                <p class="text-white text-sm relative text-one">1</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <img src="/assets/chat (1) 1.png" alt="">
+            </div>
+          </div>
+          <div class="flex-1 relative bottom-1">
+              <img class="h-10 w-h-10 rounded-full" src="/assets/zulaikha.png" alt="">
+          </div>
+        </div>
+  
+      </div>
+      </div>
+
+      <div class="flex-1 flex flex-row relative">
+
+
+        <div class="flex-1 flex flex-col border-t-2 border-r-2 space-y-72 relative promo-container">
+
+          <div class="flex-1 flex flex-col space-y-10 pt-10 text-center relative right-56">
+            <p class="primary-brown font-bold text-2xl">Promo For You</p>
+            <p class="text-sm">Coupons will be updated every weeks. Check them out! </p>
+          </div>
+
+          <div class="promo-box flex-1 flex flex-row relative justify-center items-center pl-20">
+            <div class="flex-1 flex items-center">
+              <div class="box-1">
+              </div>
+              <div class="box-2">
+              </div>
+              <div class="box-3 flex justify-center pt-10">
+                <div class="flex flex-col items-center text-center space-y-10">
+                  <img class="h-24 w-24 rounded-full" src="/assets/spaghetti.png" alt="">
+                  <p>Beef Spaghetti</p>
+                  <p>Buy 1 Choco Oreo and get 20% off for Beef Spaghetti</p>
+                  <div class="flex-1 space-y-4 dashed-border border-t-2 pt-4">
+                    <p class="text-xl">COUPON CODE</p>
+                    <p class="font-bold text-2xl">FNPR15RG</p>
+                    <p>Valid untill October 10th 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex-1 btn-brown primary-brown-background text-white relative text-center flex justify-center rounded-lg left-20">
+            <button class="h-10">Apply Coupon</button>
+          </div>
+
+          <div class="flex-1 pl-12 bottom-14 relative">
+            <p class="font-bold">Terms and Condition</p>
+            <p>1. You can only apply 1 coupon per day</p>
+            <p>2. It only for dine in</p>
+            <p>3. Buy 1 get 1 only for new user</p>
+            <p>4. Should make member card to apply coupon</p>
+          </div>
+
+        </div>
+
+        <div class="flex-1 flex flex-col">
+
+          <div class="nav-product border-t-2 pl-20 pt-5">
+            <nav class="nav-product primary-brown">
+              <ul class="flex-1 flex flex-row ">
+                  <a class="active flex-1 font-bold text-xl" href="">Favorite Product</a>
+                  <a class="flex-1 flex-1 font-bold text-xl" href="">Coffee</a>
+                  <a class="flex-1 flex-1 font-bold text-xl" href="">Non Coffee</a>
+                  <a class="flex-1 flex-1 font-bold text-xl" href="">Foods</a>
+                  <a class="flex-1 flex-1 font-bold text-xl" href="">Add-on</a>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="flex-1 grid grid-flow-col grid-cols-4 grid-rows-3 gap-4 pt-10 m-20">
+            <div class="shadow-2xl grid-product ">
+              <div class="text-center items-center justify-center  space-y-3">
+                <div class="flex justify-center">
+                  <img class="h-24 w-24 rounded-full" src="/assets/spaghetti.png" alt="">
+                </div>
+                <p class="font-bold text-4xl">Veggie tomato mix</p>
+                <p class="font-bold primary-brown">IDR 34.000</p>
+              </div>
+            </div>
+            <div class="shadow-2xl grid-product">
+              <div class="text-center items-center justify-center  space-y-3">
+                <div class="flex justify-center">
+                  <img class="h-24 w-24 rounded-full" src="/assets/saltyrice.png" alt="">
+                </div>
+                <p class="font-bold text-4xl">Salty Rice</p>
+                <p class="font-bold primary-brown">IDR 25.000</p>
+              </div>
+            </div>
+            <div class="shadow-2xl grid-product">
+              <div class="text-center items-center justify-center  space-y-3">
+                <div class="flex justify-center">
+                  <img class="h-24 w-24 rounded-full" src="/assets/creamy latte.png" alt="">
+                </div>
+                <p class="font-bold text-4xl">Creamy Latte</p>
+                <p class="font-bold primary-brown">IDR 37.000</p>
+              </div>
+            </div>
+            <div class="shadow-2xl grid-product">
+              <div class="text-center items-center justify-center  space-y-3">
+                <div class="flex justify-center">
+                  <img class="h-24 w-24 rounded-full" src="/assets/drum-sticks.png" alt="">
+                </div>
+                <p class="font-bold text-4xl">Drum Sticks</p>
+                <p class="font-bold primary-brown">IDR 45.000</p>
+              </div>
+            </div>
+            <div class="shadow-2xl grid-product">
+              <div class="text-center items-center justify-center  space-y-3">
+                <div class="flex justify-center">
+                  <img class="h-24 w-24 rounded-full" src="/assets/summer fr.png" alt="">
+                </div>
+                <p class="font-bold text-4xl">Summer Fried Rice</p>
+                <p class="font-bold primary-brown">IDR 40.000</p>
+              </div>
+            </div>
+            <div class="shadow-2xl grid-product">
+              <div class="text-center items-center justify-center  space-y-3">
+                <div class="flex justify-center">
+                  <img class="h-24 w-24 rounded-full" src="/assets/hazelnut.png" alt="">
+                </div>
+                <p class="font-bold text-4xl">Hazelnut Latte</p>
+                <p class="font-bold primary-brown">IDR 41.000</p>
+              </div>
+            </div>
+            <div class="shadow-2xl grid-product">
+              <div class="text-center items-center justify-center  space-y-3">
+                <div class="flex justify-center">
+                  <img class="h-24 w-24 rounded-full" src="/assets/creamy latte.png" alt="">
+                </div>
+                <p class="font-bold text-4xl">Creamy Latte</p>
+                <p class="font-bold primary-brown">IDR 34.000</p>
+              </div>
+            </div>
+            <div class="shadow-2xl grid-product">
+              <div class="text-center items-center justify-center  space-y-3">
+                <div class="flex justify-center">
+                  <img class="h-24 w-24 rounded-full" src="/assets/spaghetti.png" alt="">
+                </div>
+                <p class="font-bold text-4xl">Veggie tomato mix</p>
+                <p class="font-bold primary-brown">IDR 34.000</p>
+              </div>
+            </div>
+            <div class="shadow-2xl grid-product">
+              <div class="text-center items-center justify-center  space-y-3">
+                <div class="flex justify-center">
+                  <img class="h-24 w-24 rounded-full" src="/assets/spaghetti.png" alt="">
+                </div>
+                <p class="font-bold text-4xl">Veggie tomato mix</p>
+                <p class="font-bold primary-brown">IDR 34.000</p>
+              </div>
+            </div>
+            <div class="shadow-2xl grid-product">
+              <div class="text-center items-center justify-center  space-y-3">
+                <div class="flex justify-center">
+                  <img class="h-24 w-24 rounded-full" src="/assets/spaghetti.png" alt="">
+                </div>
+                <p class="font-bold text-4xl">Veggie tomato mix</p>
+                <p class="font-bold primary-brown">IDR 34.000</p>
+              </div>
+            </div>
+            <div class="shadow-2xl grid-product">
+              <div class="text-center items-center justify-center  space-y-3">
+                <div class="flex justify-center">
+                  <img class="h-24 w-24 rounded-full" src="/assets/spaghetti.png" alt="">
+                </div>
+                <p class="font-bold text-4xl">Veggie tomato mix</p>
+                <p class="font-bold primary-brown">IDR 34.000</p>
+              </div>
+            </div>
+            <div class="shadow-2xl grid-product">
+              <div class="text-center items-center justify-center  space-y-3">
+                <div class="flex justify-center">
+                  <img class="h-24 w-24 rounded-full" src="/assets/spaghetti.png" alt="">
+                </div>
+                <p class="font-bold text-4xl">Veggie tomato mix</p>
+                <p class="font-bold primary-brown">IDR 34.000</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="flex relative pt-10 pl-24 footer-bg border-t-2 h-96">
+        <div class="flex flex-row">
+          <div class="flex flex-row">
+            <div>
+              <img src="/assets/coffee 1.png" alt="">
+            </div>
+            <div class="flex-1 pl-3">
+              <p class="font-bold text-xl">Coffee Shop</p>
+              <div class="relative right-9 pt-4 leading-8 w-64">
+                <p>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</p>
+              </div>
+    
+              <div class="special-brown flex relative">
+                <div class="flex-1 flex flex-row">
+                  <div class="flex-1 text-center">
+                    <em class="fab fa-facebook-f h-5 w-5 rounded-full bg-yellow-400"></em>
+                  </div>
+                </div>
+                <div class="flex-1 flex flex-row">
+                  <div class="flex-1 text-center">
+                    <em class="fab fa-twitter h-5 w-5 rounded-full bg-yellow-400"></em>
+                  </div>
+                </div>
+                <div class="flex-1 flex flex-row">
+                  <div class="flex-1 text-center">
+                    <em class="fab fa-instagram h-5 w-5 rounded-full bg-yellow-400"></em>
+                  </div>
+                </div>
+                <div class="coffee2020 flex text-black top-10 relative right-32">
+                  <p>
+                    ©2020CoffeeStore
+                  </p>
+                </div>
+            </div>
+            </div>
+    
+    
+          <div class="flex flex-row relative product-and-engage">
+            <div class="flex-1">
+              <div class="pr-44 space-y-2">
+                <p class="font-bold text-xl">
+                  Product
+                </p>
+                <p>
+                  Download
+                </p>
+                <p>
+                  Pricing
+                </p>
+                <p>
+                  Locations
+                </p>
+                <p>
+                  Countries
+                </p>
+                <p>
+                  Blog
+                </p>
+              </div>
+            </div>
+            <div class="flex-1">
+              <div class="w-44 space-y-2">
+                <p class="font-bold text-xl">
+                  Engage
+                </p>
+                <p>
+                  Coffee Shop?
+                </p>
+                <p>
+                  FAQ
+                </p>
+                <p>
+                  About Us
+                </p>
+                <p>
+                  Privacy Policy
+                </p>
+                <p>
+                  Terms of Service
+                </p>
+              </div>
+            </div>
+          </div>        
         </div>
       </div>
-      <div class="flex-1">
-        
-      </div>
+    
     </div>
-
+    
   </div>
-
+  
 </body>
 </html>

@@ -1,0 +1,40 @@
+.banner {
+  background-image: url('/assets/turkish-coffee.png');background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1000px;
+  opacity: 0.9;
+}
+
+.primary-brown-background {
+  background: rgba(106, 64, 41, 1);
+}
+
+.primary-brown-text {
+  color:rgba(54, 33, 21, 1);
+}
+
+.checkout-text {
+  text-shadow: 1px 2px black;
+}
+
+.summ-img {
+  width: 82px;
+  height: 90px;
+}
+
+.sum-secondary {
+
+}
+
+.summ-primary {
+  position: absolute;
+  height: 900px;
+  width: 430px;
+  padding-top: 220px;
+}
+
+.product-and-engage {
+position: relative;
+left: 135%;
+}

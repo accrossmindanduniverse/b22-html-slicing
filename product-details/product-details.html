@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="product-details.css">
+  <style>
+
+  body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #d6d6d6;
+  }
+
+  .primary-brown {
+    color: rgba(106, 64, 41, 1);
+  }
+
+  .primary-yellow {
+    color: rgba(255, 203, 101, 1);
+  }
+
+  
+  .navbar {
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .primary-yellow-background {
+    background-color: rgba(255, 203, 101, 1);
+  }
+
+  .product-and-engage {
+    position: relative;
+    left: 135%;
+  }
+
+  .primary-brown-background {
+    background: rgba(106, 64, 41, 1);
+  }
+  
+  .delivery-padding {
+    padding-left: 105px;
+  }
+
+  .delivery-text {
+    width: 500px;
+    position: relative;
+  }
+
+  .delivery-height {
+    height: 1000px;
+  }
+
+  .time-input {
+    background-color: #d6d6d6;
+    width: 300px;
+    border-bottom: 1px solid black;
+}
+
+  .delivery-choosing {
+    width: 500px;
+  }
+  
+
+  </style>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?  family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  
+  <div>
+
+    <div class="navbar relative">
+
+      <div class="flex space-x-80">
+        <div class="flex-1 w-72 relative">
+          <div class="float-left">
+            <img src="/assets/coffee 1.png" alt="">
+          </div>
+          <div>
+            <p class="font-bold text-xl pl-12">
+              Coffee Shop
+            </p>
+          </div>
+        </div>
+  
+        <nav class="flex flex-row relative right-44">
+          <ul class="flex  flex-row">
+            <li class="w-24">
+              <a href="">Home</a>
+            </li>
+            <li class="w-24">
+              <a href="">Product</a>
+            </li>
+            <li class="w-24">
+              <a href="">Your Cart</a>
+            </li>
+            <li class="w-24">
+              <a href="">History</a>
+            </li>
+          </ul>
+        </nav>
+  
+        <div class="flex">
+          <div class="flex-1">
+            <div class="flex flex-row">
+              <div class="relative top-1">
+                <em class="fas fa-search absolute"></em>
+              </div>
+              <div class="pr-14">
+                <input class="bg-gray-100 pl-6 right-14 rounded-lg" type="text" placeholder="Search">
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 w-44 relative bottom-4">
+            <div class="flex items-center relative top-2">
+              <div class="primary-brown-background top-1 h-4 w-4 rounded-full text-center">
+                <p class="text-white text-sm relative text-one">1</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <img src="/assets/chat (1) 1.png" alt="">
+            </div>
+          </div>
+          <div class="flex-1 relative bottom-1">
+              <img class="user-border  h-10 w-h-10 rounded-full" src="/assets/zulaikha.png" alt="">
+          </div>
+        </div>
+  
+      </div>
+      </div>
+
+      <div class="flex-1 flex flex-row">
+
+        <div class="flex-1">
+          
+          <div class="flex flex-col space-y-5 w-96 pl-24">
+
+              <div class="flex-1 flex flex-row space-x-3 pl-10 pt-20">
+                <p>Favorite & Promo</p>
+                <em class="fas fa-chevron-right primary-brown relative pt-1 font-black"></em>
+                <p class="primary-brown font-black">Cold Brew</p>
+              </div>
+
+            <div class="flex-1 pt-24 w-96 flex justify-center">
+                <img class="h-48 w-h-48 rounded-full" src="/assets/cold-brew.png" alt="">
+            </div>
+            <div class="flex-1 w-96 text-center">
+              <p class="font-black text-4xl">COLD BREW</p>
+              <p class="text-2xl">IDR 30.000</p>
+            </div>
+
+
+            <div class="flex-1 flex flex-col w-96 text-center space-y-7">
+                  <button class="h-14 rounded-2xl primary-brown-background text-white font-bold text-xl">Add to Cart</button>
+                  <button class="h-14 rounded-2xl primary-yellow-background primary-brown font-bold text-xl">Ask a Staff</button>
+            </div>
+
+        </div>
+      </div>
+
+      <div class="delivery-height flex-1 flex flex-col pt-10">
+
+        <div class="delivery-text flex-1 space-y-7 pt-10 bg-white rounded-lg border-2">
+
+          <div class="delivery-padding flex flex-row">
+            <p class=" w-56">Delivery only on <span class="primary-brown font-bold">Monday to friday at  1 - 7 pm</span></p>
+          </div>
+          <div class="flex-1 flex justify-center">
+            <p class="w-72 primary-brown font-semibold leading-7">
+              Cold brewing is a method of brewing that combines ground coffee and cool water and uses time instead of heat to extract the flavor. It is brewed in small batches and steeped for as long as 48 hours.
+            </p>
+          </div>
+          <div class="flex-1 flex flex-col space-y-8">
+            <div class="flex-1 text-center">
+              <p class="font-black text-xl">Choose a size</p>
+            </div>
+            <div class="flex-1">
+              <div class="flex flex-row">
+                <div class="flex-1 flex justify-center text-center">
+                  <p class="h-10 w-10 rounded-full bg-yellow-400 text-xl font-bold">R</p>
+                </div>
+                <div class="flex-1 flex justify-center text-center">
+                  <p class="h-10 w-10 rounded-full bg-yellow-400 text-xl font-bold">L</p>
+                </div>
+                <div class="flex-1 flex justify-center text-center">
+                  <p class="h-10 w-10 rounded-full bg-yellow-400 text-xl font-bold">XL</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+          <div class="delivery-choosing space-y-10 space-x-4">
+            <p class="text-center font-black text-xl">Choose Delivery Methods</p>
+            <button class="w-36 h-9 primary-brown-background relative font-bold text-white rounded-lg">Dine In</button>
+            <button class="w-36 h-9 bg-gray-200 relative rounded-lg">Door Delivery</button>
+            <button class="w-36 h-9 bg-gray-200 relative rounded-lg">Pick Up</button>
+        </div>
+
+        <div class="flex-1 relative top-10">
+          <form class='flex flex-row space-x-3'>
+            <p class="font-semibold">Set time :</p>
+            <input class='time-input' type="text" placeholder="Enter the time you'll arrived">
+          </form>
+        </div>
+
+      </div>
+
+  </div>
+
+
+  <div class="flex-1 flex flex-row relative justify-center items-center space-x-10 pl-96 top-16">
+
+    <div class="flex-1 flex flex-row justify-center items-center bg-white h-44 rounded-2xl shadow-lg">
+        <div class="flex-1 pt-24 flex justify-center items-center pb-24">
+          <img class="h-24 w-24 rounded-full" src="/assets/cold-brew.png" alt="">
+        </div>
+        <div class="flex-1 pr-20">
+          <p class="font-black text-2xl">COLD BREW</p>
+          <p>xl (Large)</p>
+          <p>xl (Regular)</p>
+        </div>
+        <div class="flex-1">
+          <div class="flex flex-row">
+            <div class="flex-1 flex justify-center text-center">
+              <button class="h-8 w-8 rounded-full bg-yellow-400 text-xl font-black">-</button>
+            </div>
+            <div>
+              <button class="font-black text-xl">2</button>
+            </div>
+            <div class="flex-1 flex justify-center text-center">
+              <button class="h-8 w-8 rounded-full bg-yellow-400 text-xl font-black">+</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="flex-1">
+      <button class="bg-yellow-400 h-44 w-56 rounded-2xl shadow-lg font-black">
+        CHECKOUT
+      </button>
+    </div>
+
+  </div>
+  <div class="flex-1 h-24 bg-white w-full static"></div>
+  </div>
+  
+  <div class="flex relative pl-24 bg-white h-96">
+    <div class="flex flex-row">
+      <div class="flex flex-row">
+        <div>
+          <img src="/assets/coffee 1.png" alt="">
+        </div>
+        <div class="flex-1 pl-3">
+          <p class="font-bold text-xl">Coffee Shop</p>
+          <div class="relative right-9 pt-4 leading-8 w-64">
+            <p>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</p>
+          </div>
+
+          <div class="special-brown flex relative">
+            <div class="flex-1 flex flex-row">
+              <div class="flex-1 text-center">
+                <em class="fab fa-facebook-f h-5 w-5 rounded-full bg-yellow-400"></em>
+              </div>
+            </div>
+            <div class="flex-1 flex flex-row">
+              <div class="flex-1 text-center">
+                <em class="fab fa-twitter h-5 w-5 rounded-full bg-yellow-400"></em>
+              </div>
+            </div>
+            <div class="flex-1 flex flex-row">
+              <div class="flex-1 text-center">
+                <em class="fab fa-instagram h-5 w-5 rounded-full bg-yellow-400"></em>
+              </div>
+            </div>
+            <div class="coffee2020 flex text-black top-10 relative right-32">
+              <p>
+                ©2020CoffeeStore
+              </p>
+            </div>
+        </div>
+        </div>
+
+
+      <div class="flex flex-row relative product-and-engage">
+        <div class="flex-1">
+          <div class="pr-44 space-y-2">
+            <p class="font-bold text-xl">
+              Product
+            </p>
+            <p>
+              Download
+            </p>
+            <p>
+              Pricing
+            </p>
+            <p>
+              Locations
+            </p>
+            <p>
+              Countries
+            </p>
+            <p>
+              Blog
+            </p>
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="w-44 space-y-2">
+            <p class="font-bold text-xl">
+              Engage
+            </p>
+            <p>
+              Coffee Shop?
+            </p>
+            <p>
+              FAQ
+            </p>
+            <p>
+              About Us
+            </p>
+            <p>
+              Privacy Policy
+            </p>
+            <p>
+              Terms of Service
+            </p>
+          </div>
+        </div>
+      </div>        
+    </div>
+  </div>
+
+</div>
+  
+
+</body>
+</html>
