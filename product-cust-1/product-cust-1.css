@@ -1,0 +1,88 @@
+.navbar {
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.primary-brown {
+  color: rgba(106, 64, 41, 1);
+}
+
+.primary-brown-background {
+  background: rgba(106, 64, 41, 1);
+}
+
+.promo-container {
+  position: relative;
+}
+
+.box-1 {
+  position: absolute;
+  background: rgba(106, 64, 41, 1);
+  width: 340px;
+  height: 340px;
+  border-radius: 15px;
+}
+
+.box-2 {
+  position: absolute;
+  background: black;
+  width: 315px;
+  height: 402px;
+  border-radius: 15px;
+}
+
+.box-3 {
+  position: absolute;
+  background: rgba(255, 203, 101, 1);
+  width: 285px;
+  height: 472px;
+  border-radius: 15px;
+}
+
+.product-and-engage {
+  position: relative;
+  left: 135%;
+}
+
+.footer-bg {
+  background: #F8F8F8;
+}
+
+.text-one {
+  bottom: 1px;
+}
+
+.btn-brown {
+  width: 320px;
+}
+
+.dashed-border {
+  width: 276px;
+  border: black;
+  border-top-style: dashed;
+}
+
+.grid-product {
+  border-radius: 25px;
+}
+
+.nav-product a {
+  text-decoration: none;
+}
+
+.nav-product:hover {
+  border-bottom: 3px rgba(106, 64, 41, 1);
+}
+
+.nav-product .active {
+  border-bottom: 3px rgba(106, 64, 41, 1);
+}
+
+.nav-hover:hover {
+    color: #6A4029;
+    font-weight: bold;
+}

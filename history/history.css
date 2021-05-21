@@ -1,0 +1,63 @@
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.modal {
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 1700px;
+}
+
+.nav-hover:hover {
+  color: #6A4029;
+  font-weight: bold;
+}
+
+.banner {
+  background-image: url('/assets/tyler-nix-jE-27l7V3NU-unsplash\ 2.png');
+  left: 0px;
+  top: 0px;
+  height: 1697px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.primary-brown-background {
+  background-color: rgba(106, 64, 41, 1);
+}
+
+.checkout-text {
+  text-shadow: 1px 2px black;
+}
+
+.primary-brown {
+  color: rgba(106, 64, 41, 1);
+}
+
+input[type=checkbox] {
+  cursor: pointer;
+}
+
+.product-and-engage {
+  position: absolute;
+  left: 62%;
+}
+
+.delete-btn {
+  background-color: #6A4029;
+  color: white;
+  font-weight: bolder;
+}
+
+.cancel-btn {
+  border: 2px solid #6A4029;
+  color: #6A4029;
+  font-weight: bolder;
+}
+
+.ensure-btn {
+  width: 450px;
+}

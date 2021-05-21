@@ -12,13 +12,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
   <title>Payment and Delivery</title>
   <link rel="stylesheet" href="payment-delivery.css">
-
 </head>
 <body>
 
   <div class="banner flex flex-col">
     
-    <div class="navbar relative bg-white pl-32 h-20 pt-5">
+    <div class="relative bg-white pl-32 h-20 pt-5">
 
       <div class="flex space-x-80">
         <div class="flex-1 w-72 relative">
@@ -33,18 +32,18 @@
         </div>
   
         <nav class="flex flex-row relative right-44">
-          <ul class="flex  flex-row">
+          <ul class="flex flex-row">
             <li class="w-24">
-              <a href="">Home</a>
+              <a class="nav-hover" href="/index.html">Home</a>
             </li>
             <li class="w-24">
-              <a href="">Product</a>
+              <a class="nav-hover" href="/product-cust-1/product-cust-1.html">Product</a>
             </li>
             <li class="w-24">
-              <a href="">Your Cart</a>
+              <a class="nav-hover" href="/payment-delivery/payment-delivery.html">Your Cart</a>
             </li>
             <li class="w-24">
-              <a href="">History</a>
+              <a class="nav-hover" href="/history/history.html">History</a>
             </li>
           </ul>
         </nav>
@@ -80,14 +79,14 @@
       <p class="checkout-text font-black text-4xl text-white w-72">Checkout your item now!</p>
     </div>
 
-    <div class="flex-1 flex flex-row summ-primary relative left-32 top-10">
+    <div class="flex-1 flex flex-row summ-primary relative left-32 pb-72 space-x-96">
 
-      <div class="flex-1 flex flex-col bg-white rounded-2xl">
+      <div class="flex-1 flex flex-col bg-white oder-primary rounded-2xl">
 
         <div class="flex-1 flex justify-center items-center relative">
           <p class="text-4xl font-black primary-brown-text">Order Summary</p>
         </div>
-        <div class="flex-1 flex flex-row m-8">
+        <div class="flex-1 flex flex-row m-8 text-xl space-y-2">
           <div class="flex-1">
             <img class="summ-img rounded-lg" src="/assets/image 36.png" alt="">
           </div>
@@ -100,7 +99,7 @@
             <p>IDR 24.0</p>
           </div>
         </div>
-        <div class="flex-1 flex flex-row relative bottom-16 m-8">
+        <div class="flex-1 flex flex-row relative bottom-16 m-8 text-xl space-y-2">
           <div class="flex-1">
             <img class="summ-img rounded-lg" src="/assets/image 37.png" alt="">
           </div>
@@ -116,7 +115,7 @@
         <div class="flex-1 flex flex-row m-5 relative bottom-32 border-t-2 pt-5">
 
           <div class="flex-1 flex flex-col">
-            <div class="flex-1">
+            <div class="text-xl space-y-2">
               <p>SUBTOTAL</p>
               <p>TAX & FEES</p>
               <p>SHIPPING</p>
@@ -128,14 +127,14 @@
 
           <div class="flex-1 flex flex-col relative">
             <div class="flex-1 flex justify-end">
-              <div>
+              <div class="text-xl space-y-2">
                 <p>IDR 120.000</p>
                 <p>IDR 20.000</p>
                 <p>IDR 10.000</p>
               </div>
             </div>
-            <div class="flex-1">
-              <p class="font-black text-3xl flex-1 items-end flex h-20">IDR 150.000</p>
+            <div class="flex-1 top-5 relative">
+              <p class="font-black text-3xl flex-1 items-end flex h-20 float-right">IDR 150.000</p>
             </div>
           </div>
 
@@ -143,7 +142,85 @@
 
       </div>
       
+      <div class="flex-1 flex flex-col justify-end items-end space-y-4">
 
+        <div class="flex flex-row space-x-44 w-full">
+          <div class="flex-1">
+            <p class="checkout-text font-black text-white text-3xl">Address details</p>
+          </div>
+          <div class="pr-10">
+            <button class="checkout-text font-black text-white text-2xl">edit</button>
+          </div>
+        </div>
+        <div class="flex flex-col divide-y-2 space-y-10 bg-white w-full h-64 p-8 rounded-xl text-2xl">
+          <div>
+            <p><span class="font-black">Delivery </span>to Iskandar Street</p>
+          </div>
+          <div>
+            <p>Km 5 refinery road oppsite re
+              public road, effurun, Jakarta</p>
+          </div>
+          <div>
+            <p>+62 81348287878</p>
+          </div>
+        </div>
+
+        <div class="w-full h-16 items-center">
+          <p class="checkout-text font-black text-white text-3xl">Payment method</p>
+        </div>
+        <div class="flex-1 flex-col w-full">
+          
+          <div class="bg-white h-full text-2xl pt-10 rounded-xl">
+            <div class="divide-y space-y-20 p-10">
+
+              <div class="flex flex-row space-x-3">
+                <div class="flex items-center">
+                  <label class="radio">
+                    <input type="radio" name="choose-payment">
+                    <span class="item"></span>
+                  </label>
+                </div>
+                  <div class="flex items-center w-14 h-14 rounded-lg bg-yellow-500 text-white justify-center">
+                    <em class=" far fa-credit-card"></em>
+                  </div>
+                  <span class="flex items-center">Bank account<span>
+              </div>
+
+
+              <div class="flex flex-row space-x-3 pt-5">
+                <div class="flex items-center">
+                  <label class="radio">
+                    <input type="radio" name="choose-payment">
+                    <span class="item"></span>
+                  </label>
+                </div>
+                  <div class="flex items-center w-14 h-14 rounded-lg primary-brown-background text-white justify-center">
+                    <em class="fas fa-university"></em>
+                  </div>
+                  <span class="flex items-center">Bank account<span>
+              </div>
+
+
+              <div class="flex flex-row space-x-3 pt-5">
+                <div class="flex items-center">
+                  <label class="radio">
+                    <input type="radio" name="choose-payment">
+                    <span class="item"></span>
+                  </label>
+                </div>
+                  <div class="flex items-center w-14 h-14 rounded-lg bg-yellow-400 justify-center">
+                    <em class="fas fa-truck"></em>
+                  </div>
+                  <span class="flex items-center">Cash on delivery<span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <button class="w-full h-24 confirm-pay-btn font-bold text-white text-2xl">Confirm and Pay</button>
+
+      </div>
 
     </div>
 
@@ -152,7 +229,7 @@
   </div>
 
 
-  <div class="flex absolute pt-10 pl-24 bg-white h-96">
+  <div class="flex pt-10 pl-24 w-fu bg-white h-96">
     <div class="flex flex-row">
       <div class="flex flex-row">
         <div>

@@ -186,3 +186,8 @@ body {
   position: relative;
   top: 900px;
 }
+
+.nav-hover:hover {
+  color: #6A4029;
+  font-weight: bold;
+}
