@@ -9,6 +9,27 @@
   <link href="https://fonts.googleapis.com/css2?  family=Poppins:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="product-cust-1.css">
   <title>Document</title>
+  
+  <style>
+
+    .apply-btn {
+      height: 100%;
+    }
+
+    .promo-container {
+      width: 600px;
+    }
+
+    .grid-box {
+      height: fit-content;
+      position: relative;
+    }
+
+    /* .product-price {
+      display: flex;
+   } */
+
+  </style>
 
 </head>
 
@@ -61,9 +82,9 @@
               <img src="/assets/chat (1) 1.png" alt="">
             </div>
           </div>
-          <div class="flex-1 relative bottom-1">
+          <a href='/profile/profile-1.html' class="flex-1 relative bottom-1">
               <img class="h-10 w-h-10 rounded-full" src="/assets/zulaikha.png" alt="">
-          </div>
+          </a>
         </div>
   
       </div>
@@ -72,39 +93,47 @@
       <div class="flex-1 flex flex-row relative">
 
 
-        <div class="flex-1 flex flex-col border-t-2 border-r-2 space-y-72 relative promo-container">
+        <div class="flex flex-col border-t-2 border-r-2 space-y-72 relative promo-container">
 
-          <div class="flex-1 flex flex-col space-y-10 pt-10 text-center relative right-56">
-            <p class="primary-brown font-bold text-2xl">Promo For You</p>
-            <p class="text-sm">Coupons will be updated every weeks. Check them out! </p>
+          <div class="flex flex-col space-y-10 pt-10 text-center items-center relative">
+            <div>
+              <p class="primary-brown font-bold text-2xl">Promo For You</p>
+            </div>
+            <div class="w-72">
+              <p>Coupons will be updated every weeks. Check them out! </p>
+            </div>
           </div>
 
-          <div class="promo-box flex-1 flex flex-row relative justify-center items-center pl-20">
-            <div class="flex-1 flex items-center">
+          <div class="promo-box flex flex-row relative p-24">
+            <div class="flex items-center">
               <div class="box-1">
               </div>
               <div class="box-2">
               </div>
-              <div class="box-3 flex justify-center pt-10">
+              <div class="box-3 flex justify-center p-12">
                 <div class="flex flex-col items-center text-center space-y-10">
-                  <img class="h-24 w-24 rounded-full" src="/assets/spaghetti.png" alt="">
-                  <p>Beef Spaghetti</p>
-                  <p>Buy 1 Choco Oreo and get 20% off for Beef Spaghetti</p>
+                  <img class="h-32 w-32 rounded-full" src="/assets/spaghetti.png" alt="">
+                  <div class="w-72">
+                    <p class="text-3xl font-bold text-center">Beef Spaghetti 20% Off</p>
+                  </div>
+                  <div class="w-72">
+                    <p class="text-xl">Buy 1 Choco Oreo and get 20% off for Beef Spaghetti</p>
+                  </div>
                   <div class="flex-1 space-y-4 dashed-border border-t-2 pt-4">
                     <p class="text-xl">COUPON CODE</p>
                     <p class="font-bold text-2xl">FNPR15RG</p>
                     <p>Valid untill October 10th 2020</p>
                   </div>
+                  <div class="pt-10 flex float-right w-full">
+                    <button class="w-80 h-16 primary-brown-background text-white text-center rounded-2xl">Apply Coupon</button>
+                  </div>
+                  
                 </div>
               </div>
             </div>
           </div>
           
-          <div class="flex-1 btn-brown primary-brown-background text-white relative text-center flex justify-center rounded-lg left-20">
-            <button class="h-10">Apply Coupon</button>
-          </div>
-
-          <div class="flex-1 pl-12 bottom-14 relative">
+          <div class="h-full flex flex-col items-start justify-end p-20 text-xl space-y-4">
             <p class="font-bold">Terms and Condition</p>
             <p>1. You can only apply 1 coupon per day</p>
             <p>2. It only for dine in</p>
@@ -114,128 +143,205 @@
 
         </div>
 
-        <div class="flex-1 flex flex-col">
+        <div class="flex flex-col">
 
           <div class="nav-product border-t-2 pl-20 pt-5">
             <nav class="nav-product primary-brown">
-              <ul class="flex-1 flex flex-row ">
-                  <a class="active flex-1 font-bold text-xl" href="">Favorite Product</a>
-                  <a class="flex-1 flex-1 font-bold text-xl" href="">Coffee</a>
-                  <a class="flex-1 flex-1 font-bold text-xl" href="">Non Coffee</a>
-                  <a class="flex-1 flex-1 font-bold text-xl" href="">Foods</a>
-                  <a class="flex-1 flex-1 font-bold text-xl" href="">Add-on</a>
+              <ul class="space-x-44 flex flex-row ">
+                  <a class="active font-bold text-xl" href="">Favorite Product</a>
+                  <a class="font-bold text-xl" href="">Coffee</a>
+                  <a class="font-bold text-xl" href="">Non Coffee</a>
+                  <a class="font-bold text-xl" href="">Foods</a>
+                  <a class="font-bold text-xl" href="">Add-on</a>
               </ul>
             </nav>
           </div>
 
-          <div class="flex-1 grid grid-flow-col grid-cols-4 grid-rows-3 gap-4 pt-10 m-20">
-            <div class="shadow-2xl grid-product ">
-              <div class="text-center items-center justify-center  space-y-3">
+          <div class="grid grid-flow-col grid-cols-4 grid-rows-3 gap-24 m-36">
+            <div class="shadow-2xl grid-product">
+
+              <div class="flex flex-col text-center items-center justify-center space-y-3 h-full">
                 <div class="flex justify-center">
-                  <img class="h-24 w-24 rounded-full" src="/assets/spaghetti.png" alt="">
+                  <img class="h-24 w-24 rounded-full" src="/assets/cold-brew.png" alt="">
                 </div>
-                <p class="font-bold text-4xl">Veggie tomato mix</p>
-                <p class="font-bold primary-brown">IDR 34.000</p>
+                <div>
+                  <a href="/product-details/product-details.html" class="font-bold text-4xl">Cold Brew</a>
+                </div>
+                <div class=" h-full flex items-end relative product-price">
+                  <p class="font-bold text-xl primary-brown">IDR 30.000</p>
+                </div>
               </div>
+              
             </div>
             <div class="shadow-2xl grid-product">
-              <div class="text-center items-center justify-center  space-y-3">
+
+              <div class="flex flex-col text-center items-center justify-center space-y-3 h-full">
                 <div class="flex justify-center">
                   <img class="h-24 w-24 rounded-full" src="/assets/saltyrice.png" alt="">
                 </div>
-                <p class="font-bold text-4xl">Salty Rice</p>
-                <p class="font-bold primary-brown">IDR 25.000</p>
+                <div>
+                  <p class="font-bold text-4xl">Salty Rice</p>
+                </div>
+                <div class=" h-full flex items-end relative product-price">
+                  <p class="font-bold text-xl primary-brown">IDR 25.000</p>
+                </div>
               </div>
+
             </div>
             <div class="shadow-2xl grid-product">
-              <div class="text-center items-center justify-center  space-y-3">
+
+              <div class="flex flex-col text-center items-center justify-center space-y-3 h-full">
                 <div class="flex justify-center">
                   <img class="h-24 w-24 rounded-full" src="/assets/creamy latte.png" alt="">
                 </div>
-                <p class="font-bold text-4xl">Creamy Latte</p>
-                <p class="font-bold primary-brown">IDR 37.000</p>
+                <div>
+                  <p class="font-bold text-4xl">Creamy Latte</p>
+                </div>
+                <div class=" h-full flex items-end relative product-price">
+                  <p class="font-bold text-xl primary-brown">IDR 37.000</p>
+                </div>
               </div>
+
             </div>
             <div class="shadow-2xl grid-product">
-              <div class="text-center items-center justify-center  space-y-3">
+
+              <div class="flex flex-col text-center items-center justify-center space-y-3 h-full">
                 <div class="flex justify-center">
                   <img class="h-24 w-24 rounded-full" src="/assets/drum-sticks.png" alt="">
                 </div>
-                <p class="font-bold text-4xl">Drum Sticks</p>
-                <p class="font-bold primary-brown">IDR 45.000</p>
+                <div>
+                  <p class="font-bold text-4xl">Drum Sticks</p>
+                </div>
+                <div class=" h-full flex items-end relative product-price">
+                  <p class="font-bold text-xl primary-brown">IDR 45.000</p>
+                </div>
               </div>
+              
             </div>
             <div class="shadow-2xl grid-product">
-              <div class="text-center items-center justify-center  space-y-3">
+
+              <div class="flex flex-col text-center items-center justify-center space-y-3 h-full">
                 <div class="flex justify-center">
                   <img class="h-24 w-24 rounded-full" src="/assets/summer fr.png" alt="">
                 </div>
-                <p class="font-bold text-4xl">Summer Fried Rice</p>
-                <p class="font-bold primary-brown">IDR 40.000</p>
+                <div>
+                  <p class="font-bold text-4xl">Summer Fried Rice</p>
+                </div>
+                <div class=" h-full flex items-end relative product-price">
+                  <p class="font-bold text-xl primary-brown">IDR 40.000</p>
+                </div>
               </div>
+
             </div>
             <div class="shadow-2xl grid-product">
-              <div class="text-center items-center justify-center  space-y-3">
+
+              <div class="flex flex-col text-center items-center justify-center space-y-3 h-full">
                 <div class="flex justify-center">
                   <img class="h-24 w-24 rounded-full" src="/assets/hazelnut.png" alt="">
                 </div>
-                <p class="font-bold text-4xl">Hazelnut Latte</p>
-                <p class="font-bold primary-brown">IDR 41.000</p>
+                <div>
+                  <p class="font-bold text-4xl">Hazelnut Latte</p>
+                </div>
+                <div class=" h-full flex items-end relative product-price">
+                  <p class="font-bold text-xl primary-brown">IDR 45.000</p>
+                </div>
               </div>
+
             </div>
             <div class="shadow-2xl grid-product">
-              <div class="text-center items-center justify-center  space-y-3">
+
+              <div class="flex flex-col text-center items-center justify-center space-y-3 h-full">
                 <div class="flex justify-center">
                   <img class="h-24 w-24 rounded-full" src="/assets/creamy latte.png" alt="">
                 </div>
-                <p class="font-bold text-4xl">Creamy Latte</p>
-                <p class="font-bold primary-brown">IDR 34.000</p>
+                <div>
+                  <p class="font-bold text-4xl">Creamy Latte</p>
+                </div>
+                <div class=" h-full flex items-end relative product-price">
+                  <p class="font-bold text-xl primary-brown">IDR 34.000</p>
+                </div>
               </div>
+
             </div>
             <div class="shadow-2xl grid-product">
-              <div class="text-center items-center justify-center  space-y-3">
+
+              <div class="flex flex-col text-center items-center justify-center space-y-3 h-full">
                 <div class="flex justify-center">
                   <img class="h-24 w-24 rounded-full" src="/assets/spaghetti.png" alt="">
                 </div>
-                <p class="font-bold text-4xl">Veggie tomato mix</p>
-                <p class="font-bold primary-brown">IDR 34.000</p>
+                <div
+                  <p class="font-bold text-4xl">Veggie tomato mix</p>
+                </div>
+                <div class=" h-full flex items-end relative product-price">
+                  <p class="font-bold text-xl primary-brown">IDR 34.000</p>
+                </div>
               </div>
+
+            </div>
+
+            <div class="shadow-2xl grid-product">
+
+              <div class="flex flex-col text-center items-center justify-center space-y-3 h-full">
+                <div class="flex justify-center">
+                  <img class="h-24 w-24 rounded-full" src="/assets/summer fr.png" alt="">
+                </div>
+                <div>
+                  <p class="font-bold text-4xl">Summer Fried Rice</p>
+                </div>
+                <div class=" h-full flex items-end relative product-price">
+                  <p class="font-bold text-xl primary-brown">IDR 40.000</p>
+                </div>
+              </div>
+
             </div>
             <div class="shadow-2xl grid-product">
-              <div class="text-center items-center justify-center  space-y-3">
+
+              <div class="flex flex-col text-center items-center justify-center space-y-3 h-full">
                 <div class="flex justify-center">
-                  <img class="h-24 w-24 rounded-full" src="/assets/spaghetti.png" alt="">
+                  <img class="h-24 w-24 rounded-full" src="/assets/hazelnut.png" alt="">
                 </div>
-                <p class="font-bold text-4xl">Veggie tomato mix</p>
-                <p class="font-bold primary-brown">IDR 34.000</p>
+                <div>
+                  <p class="font-bold text-4xl">Hazelnut Latte</p>
+                </div>
+                <div class=" h-full flex items-end relative product-price">
+                  <p class="font-bold text-xl primary-brown">IDR 45.000</p>
+                </div>
               </div>
+
             </div>
             <div class="shadow-2xl grid-product">
-              <div class="text-center items-center justify-center  space-y-3">
-                <div class="flex justify-center">
-                  <img class="h-24 w-24 rounded-full" src="/assets/spaghetti.png" alt="">
+
+              <div class="flex flex-col  text-center items-center justify-center space-y-3 h-full">
+
+                <div class="flex flex-col text-center items-center justify-center space-y-3 h-full">
+                  <div class="flex justify-center">
+                    <img class="h-24 w-24 rounded-full" src="/assets/spaghetti.png" alt="">
+                  </div>
+                  <div>
+                    <p class="font-bold text-4xl">Spaghetti</p>
+                  </div>
+                  <div class=" h-full flex items-end relative product-price">
+                    <p class="font-bold text-xl primary-brown">IDR 34.000</p>
+                  </div>
                 </div>
-                <p class="font-bold text-4xl">Veggie tomato mix</p>
-                <p class="font-bold primary-brown">IDR 34.000</p>
+
               </div>
+
             </div>
             <div class="shadow-2xl grid-product">
-              <div class="text-center items-center justify-center  space-y-3">
+
+              <div class="flex flex-col  text-center items-center justify-center space-y-3 h-full">
                 <div class="flex justify-center">
-                  <img class="h-24 w-24 rounded-full" src="/assets/spaghetti.png" alt="">
+                  <img class="h-24 w-24 rounded-full" src="/assets/vegan's.png" alt="">
                 </div>
-                <p class="font-bold text-4xl">Veggie tomato mix</p>
-                <p class="font-bold primary-brown">IDR 34.000</p>
-              </div>
-            </div>
-            <div class="shadow-2xl grid-product">
-              <div class="text-center items-center justify-center  space-y-3">
-                <div class="flex justify-center">
-                  <img class="h-24 w-24 rounded-full" src="/assets/spaghetti.png" alt="">
+                <div>
+                  <p class="font-bold text-4xl">Veggie tomato mix</p>
                 </div>
-                <p class="font-bold text-4xl">Veggie tomato mix</p>
-                <p class="font-bold primary-brown">IDR 34.000</p>
+                <div class=" h-full flex items-end relative product-price">
+                  <p class="font-bold text-xl primary-brown">IDR 34.000</p>
+                </div>
               </div>
+
             </div>
           </div>
 
@@ -255,23 +361,21 @@
                 <p>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</p>
               </div>
     
-              <div class="special-brown flex relative">
-                <div class="flex-1 flex flex-row">
-                  <div class="flex-1 text-center">
-                    <em class="fab fa-facebook-f h-5 w-5 rounded-full bg-yellow-400"></em>
+              <div class="pt-10 flex flex-col relative space-x-5 space-y-4">
+                <div class="flex flex-row space-x-5">
+                  <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
+                    <em class="fab fa-facebook-f"></em>
                   </div>
+                  <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
+                    <em class="fab fa-twitter"></em>
                 </div>
-                <div class="flex-1 flex flex-row">
-                  <div class="flex-1 text-center">
-                    <em class="fab fa-twitter h-5 w-5 rounded-full bg-yellow-400"></em>
-                  </div>
+                <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
+                  <em class="fab fa-instagram"></em>
                 </div>
-                <div class="flex-1 flex flex-row">
-                  <div class="flex-1 text-center">
-                    <em class="fab fa-instagram h-5 w-5 rounded-full bg-yellow-400"></em>
-                  </div>
+                
                 </div>
-                <div class="coffee2020 flex text-black top-10 relative right-32">
+
+                <div class="pt-4 flex text-black">
                   <p>
                     ©2020CoffeeStore
                   </p>

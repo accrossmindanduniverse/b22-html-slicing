@@ -93,33 +93,11 @@ body {
   padding-right: 80%;
 }
 
-.radio-btn-label {
-  position: relative;
-  cursor: pointer;
-}
-
 .nav-hover:hover {
   color: #6A4029;
   font-weight: bold;
 }
 
-.radio-btn-input + label.radio-btn-label {
-  border: 30px solid rgba(106, 64, 41, 1);
-}
-
-
-
-.radio-btn-label .checkmark:after {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-}
-
-.checkmark {
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-}
 
 .product-and-engage {
   position: relative;

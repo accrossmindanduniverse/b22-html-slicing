@@ -15,31 +15,31 @@
   background: rgba(106, 64, 41, 1);
 }
 
-.promo-container {
-  position: relative;
+.promo-box {
+  width: 500px;
 }
 
 .box-1 {
   position: absolute;
   background: rgba(106, 64, 41, 1);
-  width: 340px;
-  height: 340px;
+  width: 360px;
+  height: 450px;
   border-radius: 15px;
 }
 
 .box-2 {
   position: absolute;
   background: black;
-  width: 315px;
-  height: 402px;
+  width: 335px;
+  height: 522px;
   border-radius: 15px;
 }
 
 .box-3 {
   position: absolute;
   background: rgba(255, 203, 101, 1);
-  width: 285px;
-  height: 472px;
+  width: 305px;
+  height: 592px;
   border-radius: 15px;
 }
 
@@ -56,18 +56,18 @@
   bottom: 1px;
 }
 
-.btn-brown {
-  width: 320px;
-}
 
 .dashed-border {
-  width: 276px;
+  width: 257px;
   border: black;
   border-top-style: dashed;
 }
 
 .grid-product {
   border-radius: 25px;
+  width: 230px;
+  height: 430px;
+  padding: 60px;
 }
 
 .nav-product a {

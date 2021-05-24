@@ -4,10 +4,9 @@ body {
 
 .modal {
   background-color: rgba(0,0,0,0.5);
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
-  height: 1700px;
 }
 
 .nav-hover:hover {
@@ -60,4 +59,56 @@ input[type=checkbox] {
 
 .ensure-btn {
   width: 450px;
+}
+
+
+.custom-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+.custom-checkbox input:checked ~ .item {
+  background-color: #6A4029;
+}
+
+.item:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked ~ .item:after {
+  display: block;
+}
+
+.custom-checkbox .item:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }

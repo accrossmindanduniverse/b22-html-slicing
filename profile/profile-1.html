@@ -9,6 +9,45 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?  family=Poppins:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="profile.css">
+  
+  <style>
+
+    .radio {
+      display: block;
+    }
+
+    .radio .item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 14px;
+      height: 14px;
+      border: 2px solid #6A4029;
+      border-radius: 7px;
+      background-color: transparent;
+    }
+
+    .radio input {
+      display: none;
+    }
+
+    .radio .item::after {
+      position: absolute;
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      border: 2px solid #6A4029;
+      content: '';
+      border-radius: 11px;
+      cursor: pointer;
+    }
+
+    .radio input:checked + .item {
+      background-color: #FFBA33;
+    }
+
+  </style>
 
 </head>
 <body>
@@ -163,7 +202,7 @@
 
     <div class="user-details border-2 bg-white flex-1">
       <div class="flex flex-row">
-<!-- asdasdasd -->
+
       <div class="flex flex-col">
 
         <div class="flex-1 flex flex-row pt-5">
@@ -223,19 +262,30 @@
                     <p>03/04/90</p>
                   </div>
                 </div>
-
-                <div class="flex-1 user-contact-modal pt-10">
-                  <div class="flex flex-col ">
-                    <label class="radio-btn-label">
+                
+                <div class="user-contact-modal pt-10 flex flex-col space-y-5">
+                  <div class="flex flex-row space-x-3">
+                    <div class="flex justify-center items-center">
+                      <label class="radio">
+                        <input type="radio" name="gender">
+                        <span class="item"></span>
+                      </label>
+                    </div>
+                    <div>
                       <span>Male</span>
-                      <input class="flex-1 radio-btn-input" name="radio" type="radio" checked="checked">
-                      <span class="checkmark w-10 h-10 rounded-full"></span>
-                    </label>
-                    <label class="radio-btn-label">
+                    </div>
+                  </div>
+                  
+                  <div class="flex flex-row space-x-3">
+                    <div class="flex justify-center items-center">
+                      <label class="radio">
+                        <input type="radio" name="gender">
+                        <span class="item"></span>
+                      </label>
+                    </div>
+                    <div>
                       <span>Female</span>
-                      <input class="flex-1 radio-btn-input" name="radio" type="radio">
-                      <span class="checkmark w-10 h-10 rounded-full"></span>
-                    </label>
+                    </div>
                   </div>
                 </div>
 
@@ -255,11 +305,11 @@
               </div>
               <div class="flex-1 flex flex-col space-y-3 save-changes-color">
                 <div class="flex border-2 space-x-44 items-center h-16 rounded-2xl bg-white">
-                  <p class="font-bold pl-3">Eddit Password</p><em class="fas fa-chevron-right"></em>
+                  <p class="font-bold pl-3">Eddit Password</p><a href='/forgot-password/forgot-password.html' class="fas fa-chevron-right"></a>
                 </div>
                 <div class="flex border-2 space-x-60 items-center h-16 rounded-2xl bg-white">
                   <p class="font-bold pl-3">Log Out</p>
-                  <em class="fas fa-chevron-right relative -left-2"></em>
+                  <a href="/home-page/home-page.html" class="fas fa-chevron-right relative -left-2"></a>
                 </div>
               </div>
             </div>

@@ -22,18 +22,18 @@
 
   
 
+  <div class="modal w-screen h-screen flex justify-center items-center">
+    <div class="flex flex-col bg-white rounded-xl h-60 btn ensure-btn p-5 space-y-20">
+      <p class="font-bold text-2xl text-center">Are you sure want to delete the selected items?</p>
+      <div class="flex-1 font-black text-2xl flex flex-row space-x-40">
+        <button class="h-14 w-32 cancel-btn rounded-xl">Cancel</button>
+        <button class="h-14 w-32 delete-btn rounded-xl">Delete</button>
+      </div>
+    </div>
+  </div>
   
   <div class="banner">
 
-    <div class="modal w-screen flex justify-center items-center">
-      <div class="flex flex-col bg-white rounded-xl h-60 btn ensure-btn p-5 space-y-20">
-        <p class="font-bold text-2xl text-center">Are you sure want to delete the selected items?</p>
-        <div class="flex-1 font-black text-2xl flex flex-row space-x-40">
-          <button class="h-14 w-32 cancel-btn rounded-xl">Cancel</button>
-          <button class="h-14 w-32 delete-btn rounded-xl">Delete</button>
-        </div>
-      </div>
-    </div>
 
     <div class="navbar relative bg-white pl-32 h-20 pt-5">
 
@@ -85,9 +85,9 @@
               <img src="/assets/chat (1) 1.png" alt="">
             </div>
           </div>
-          <div class="flex-1 relative bottom-1">
+          <a href='/profile/profile-1.html' class="flex-1 relative bottom-1">
               <img class="h-10 w-h-10 rounded-full" src="/assets/zulaikha.png" alt="">
-          </div>
+          </a>
         </div>
   
       </div>
@@ -435,23 +435,21 @@
                   <p>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</p>
                 </div>
       
-                <div class="special-brown flex relative">
-                  <div class="flex-1 flex flex-row">
-                    <div class="flex-1 text-center">
-                      <em class="fab fa-facebook-f h-5 w-5 rounded-full bg-yellow-400"></em>
+                <div class="pt-10 flex flex-col relative space-x-5 space-y-4">
+                  <div class="flex flex-row space-x-5">
+                    <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
+                      <em class="fab fa-facebook-f"></em>
                     </div>
+                    <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
+                      <em class="fab fa-twitter"></em>
                   </div>
-                  <div class="flex-1 flex flex-row">
-                    <div class="flex-1 text-center">
-                      <em class="fab fa-twitter h-5 w-5 rounded-full bg-yellow-400"></em>
-                    </div>
+                  <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
+                    <em class="fab fa-instagram"></em>
                   </div>
-                  <div class="flex-1 flex flex-row">
-                    <div class="flex-1 text-center">
-                      <em class="fab fa-instagram h-5 w-5 rounded-full bg-yellow-400"></em>
-                    </div>
+                  
                   </div>
-                  <div class="coffee2020 flex text-black top-10 relative right-32">
+  
+                  <div class="pt-4 flex text-black">
                     <p>
                       ©2020CoffeeStore
                     </p>

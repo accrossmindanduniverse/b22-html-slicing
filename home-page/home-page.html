@@ -33,23 +33,25 @@
         </div>
   
         <nav class="w-full relative right-10">
-          <ul class="flex flex-row float-left space-x-10 justify-center items-center">
-            <li class="">
+          <ul class="flex flex-row float-left space-x-20 justify-center items-center w-full">
+            <li>
               <a class="nav-hover" href="/home-page/home-page.html">Home</a>
             </li>
-            <li class="">
+            <li>
               <a class="nav-hover" href="/product-cust-1/product-cust-1.html">Product</a>
             </li>
-            <li class="">
+            <li>
               <a class="nav-hover" href="/payment-delivery/payment-delivery.html">Your Cart</a>
             </li>
-            <li class="">
+            <li>
               <a class="nav-hover" href="/history/history.html">History</a>
             </li>
-              <li class="flex-1 flex flex-row relative pl-44 space-x-24 w-full justify-center items-center font-bold primary-brown-text">
+            <div class="flex-1 flex justify-end pr-32">
+              <li class="flex flex-row relative space-x-24 w-full justify-center items-center font-bold primary-brown-text w-min">
                 <a href="/login/login.html">Login</a>
                 <a class="w-32 h-10 rounded-full flex justify-center items-center primary-btn" href="/sign-up/sign-up.html">Sign Up</a>
               </li>
+            </div>
           </ul>
         </nav>
       </div>
@@ -57,16 +59,14 @@
 
     <div class="flex flex-col space-y-10 pt-7">
 
-      <div class="w-full relative pr-96 flex justify-end">
-        <div class="relative top-3 left-3">
-          <em class="fas fa-search absolute"></em>
-        </div>
-        <div class="pr-14">
+      <div class="w-full relative flex justify-end items-end pr-28">
+        <div class="pr-14 relative">
+          <em class="fas fa-search absolute left-3 top-3"></em>
           <input class="bg-gray-100 pl-10 right-14 h-10 w-64 rounded-full" type="text" placeholder="Search">
         </div>
       </div>
 
-      <div class="flex-1 space-y-10 first-content relative left-24">
+      <div class="flex-1 space-y-10 first-content relative left-44">
         <div>
           <p class="font-bold text-6xl text-white">Start Your Day with Coffee and Good Meals</p>
         </div>
@@ -81,13 +81,13 @@
         
       </div>
 
-      <div class="flex flex-row stores-info bg-white rounded-2xl shadow-2xl justify-center items-center left-72 top-44 relative">
+      <div class="flex flex-row bg-white rounded-2xl shadow-2xl justify-center items-center relative m-44 top-24">
 
-        <div class="flex justify-center items-center space-x-64 p-20 divide-x">
+        <div class="flex justify-center items-center space-x-64 p-20 divide-x-2 w-screen">
           <div class="flex flex-row space-x-5 items-center">
   
-            <div class="flex justify-center text-center">
-              <p class="h-10 w-10 rounded-full bg-yellow-400 text-xl font-bold"><em class="primary-brown-text fas fa-user"></em></p>
+            <div class="h-10 w-10 rounded-full bg-yellow-400 flex justify-center items-center">
+              <p class="text-center text-xl font-bold"><em class="primary-brown-text fas fa-user"></em></p>
             </div>
             <div class="flex flex-col">
               <p class="font-black text-2xl">90+</p>
@@ -98,8 +98,8 @@
   
           <div class="flex flex-row space-x-5 pl-10 items-center">
   
-            <div class="flex-1 flex justify-center text-center">
-              <p class="h-10 w-10 rounded-full bg-yellow-400 text-xl font-bold"><em class="primary-brown-text fas fa-map-marker-alt"></em></p>
+            <div class="h-10 w-10 rounded-full bg-yellow-400 flex justify-center items-center">
+              <p class="text-center text-xl font-bold"><em class="primary-brown-text fas fa-map-marker-alt"></em></p>
             </div>
             <div class="flex flex-col">
               <p class="font-black text-2xl">30+</p>
@@ -110,8 +110,8 @@
   
           <div class="flex flex-row space-x-5 items-center pl-10">
   
-            <div class="flex-1 flex justify-center text-center">
-              <p class="h-10 w-10 rounded-full bg-yellow-400 text-xl font-bold"><em class="primary-brown-text fas fa-heart"></em></p>
+            <div class="h-10 w-10 rounded-full bg-yellow-400 flex justify-center items-center">
+              <p class="text-xl font-bold text-center "><em class="primary-brown-text fas fa-heart"></em></p>
             </div>
             <div class="flex flex-col">
               <p class="font-black text-2xl">800+</p>
@@ -131,19 +131,27 @@
           <p class="font-bold text-2xl">We Provide Good Coffee and Healthy Meals</p>
           <p class="w-96">You can explore the menu that we provide with fun and have their own taste and make your day better.</p>
           <div class="flex flex-row space-x-2 items-center">
-            <em class="text-white w-5 h-5 rounded-full bg-green-300 text-xs text-center flex justify-center fas fa-check"></em>
+            <div class=" w-5 h-5 rounded-full bg-green-300 flex justify-center items-center">
+              <em class="text-white text-xs text-center fas fa-check"></em>
+            </div>
             <p>High quality beans.</p>
           </div>
           <div class="flex flex-row space-x-2">
-            <em class="text-white w-5 h-5 rounded-full bg-green-300 text-xs text-center fas fa-check"></em>
+            <div class=" w-5 h-5 rounded-full bg-green-300 flex justify-center items-center">
+              <em class="text-white text-xs text-center fas fa-check"></em>
+            </div>
             <p>Healthy meals, you can request the ingredients.</p>
           </div>
           <div class="flex flex-row space-x-2">
-            <em class="text-white w-5 h-5 rounded-full bg-green-300 text-xs text-center fas fa-check"></em>
+            <div class=" w-5 h-5 rounded-full bg-green-300 flex justify-center items-center">
+              <em class="text-white text-xs text-center fas fa-check"></em>
+            </div>
             <p>Chat with our staff to get better experience for ordering.</p>
           </div>
           <div class="flex flex-row space-x-2">
-            <em class="text-white w-5 h-5 rounded-full bg-green-300 text-xs text-center fas fa-check"></em>
+            <div class=" w-5 h-5 rounded-full bg-green-300 flex justify-center items-center">
+              <em class="text-white text-xs text-center fas fa-check"></em>
+            </div>
             <p>Free member card with a minimum purchase of IDR 200.000.</p>
           </div>
         </div>
@@ -299,10 +307,10 @@
 
           <div class="flex flex-row space-x-20 partners-container h-44 items-center justify-center">
             <img class="our-partners w-44 h-24" src="/assets/netflix.png" alt="">
-            <img class="our-partners w-36 h-16" src="/assets/reddit.png" alt="">
+            <img class="our-partners w-36 h-12" src="/assets/reddit.png" alt="">
             <img class="our-partners w-44 h-36" src="/assets/amazon.png" alt="">
             <img class="our-partners w-44 h-16" src="/assets/discord.png" alt="">
-            <img class="our-partners w-48 h-16" src="/assets/spotify.png" alt="">
+            <img class="our-partners w-44 h-14" src="/assets/spotify.png" alt="">
           </div>
 
           <div class="text-center space-y-5 flex flex-col justify-center items-center">
@@ -386,9 +394,9 @@
 
         </div>
 
-        <div class="flex flex-row w-full p-20 relative bottom-40 w-full h-full bg-white">
+        <div class="flex flex-row w-full p-20 relative bottom-48 w-full h-full bg-white">
 
-          <div  class="flex-1 flex flex-row space-x-5 items-center">
+          <div  class="flex-1 flex flex-row space-x-5 items-center pl-72">
             <div class="w-12 h-5 rounded-full primary-brown-bg"></div>
             <div class="w-5 h-5 rounded-full bg-gray-300"></div>
             <div class="w-5 h-5 rounded-full bg-gray-300"></div>
@@ -430,23 +438,21 @@
                   <p>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</p>
                 </div>
       
-                <div class="special-brown flex relative">
-                  <div class="flex-1 flex flex-row">
-                    <div class="flex-1 text-center">
-                      <em class="fab fa-facebook-f h-5 w-5 rounded-full bg-yellow-400"></em>
+                <div class="pt-10 flex flex-col relative space-x-5 space-y-4">
+                  <div class="flex flex-row space-x-5">
+                    <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
+                      <em class="fab fa-facebook-f"></em>
                     </div>
+                    <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
+                      <em class="fab fa-twitter"></em>
                   </div>
-                  <div class="flex-1 flex flex-row">
-                    <div class="flex-1 text-center">
-                      <em class="fab fa-twitter h-5 w-5 rounded-full bg-yellow-400"></em>
-                    </div>
+                  <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
+                    <em class="fab fa-instagram"></em>
                   </div>
-                  <div class="flex-1 flex flex-row">
-                    <div class="flex-1 text-center">
-                      <em class="fab fa-instagram h-5 w-5 rounded-full bg-yellow-400"></em>
-                    </div>
+                  
                   </div>
-                  <div class="coffee2020 flex text-black top-10 relative right-32">
+  
+                  <div class="pt-4 flex text-black">
                     <p>
                       ©2020CoffeeStore
                     </p>
