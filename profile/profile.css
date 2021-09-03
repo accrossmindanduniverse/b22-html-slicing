@@ -1,22 +1,10 @@
 body {
-  font-family: Rubik;
+  font-family: "Poppins";
 }
 
-.banner {
+.profile-banner {
   background-image: url('/assets/nathan-dumlao-XOhI_kW_TaM-unsplash\ 1.png');
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 1430px;
-}
-
-.navbar {
-  position: relative;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
 }
 
 .text-one-bg {
@@ -39,32 +27,8 @@ body {
   height: 500px;
 }
 
-.user-profile-box {
-  font-family: 'Rubik';
-  width: 310px;
-  height: 200px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-
 .user-profile {
   border-bottom: 15px solid rgba(106, 64, 41, 1) ;
-}
-
-#user-contacts {
-  position: absolute;
-  width: 800px;
-  left: 480px;
-  height: 500px;
-}
-
-.primary {
-  font-family: 'Poppins', sans-serif;
-}
-
-.user-contact-modal {
-  line-height: 50px;
 }
 
 .bottom-border {
@@ -77,17 +41,6 @@ body {
   width: 500;
 }
 
-.primary-shadow {
-  text-shadow: 0px 15px 20px rgba(255, 255, 255, 0.26);
-}
-
-.user-details {
-  position: absolute;
-  width: 800px;
-  height: 500px;
-  bottom: -350px;
-  border-radius: 6px;
-}
 
 .details-pen {
   padding-right: 80%;
@@ -102,4 +55,43 @@ body {
 .product-and-engage {
   position: relative;
   left: 135%;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile-profile-con {
+    display: flex;
+    background-color: transparent;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mobile-profile-text {
+    display: flex;
+    width: 100vw;
+    font-size: 30px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .mobile-choose-photo {
+    width: 100%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    align-items: flex-start;
+  }
+  .footer-flex1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .footer-flex2 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .mobile-navbar {
+    display: none;
+  }
 }

@@ -1,21 +1,26 @@
 body {
-  font-family: 'Rubik';
+  font-family: 'Poppins';
 }
 
 .banner {
   background-image: url('/assets/home\ background.png');
   background-position: center;
   background-size: cover;
-  height: 900px;
+  width: 100vw;
+  height: 100vh;
 }
 
+.slogan {
+  width: 100vw;
+}
+
+.navlist {
+  width: 100vw;
+}
+ 
 .primary-btn {
   box-shadow: 2px 2px 15px #FFBA33;
   background-color: #FFBA33;
-}
-
-.primary-brown-text {
-  color:rgb(106, 64, 41, 1);
 }
 
 .primary-brown-bg {
@@ -43,11 +48,6 @@ body {
   background-color: #d1a187;
 }
 
-.nav-hover:hover {
-  color: #6A4029;
-  font-weight: bold;
-}
-
 .first-content {
   width: 600px;
 }
@@ -70,14 +70,14 @@ body {
 }
 
 .container-2nd {
-  width: 100wh;
-  height: auto;
+  width: 100vw;
   background: #fffafa;
 }
 
 .stores-offer {
-  width: 400px;
+  width: auto;
   height: auto;
+  background-color: '#fff';
   border-radius: 20px;
 }
 
@@ -85,46 +85,64 @@ body {
   background-color: white;
 }
 
-.map-spot-txt {
-  width: 600px;
-}
-
 .world-img {
   width: 1060px;
   height: 537.77px;
 }
 
-.partners-container {
-  height: auto;
-  width: auto;
-}
-
-.customers-love {
-  width: 600px;
-}
-
 .customer-testi {
   width: 500px;
   height: 260px;
-  padding: 30px;
-}
-
-.customer-container {
-  overflow: hidden;
-}
-
-.promo-container {
-  bottom: 350px;
-  width: 1200px;
-  height: 200px;
 }
 
 .product-and-engage {
   position: relative;
-  left: 62%;
+  left: 140%;
 }
 
 .footer {
-  position: relative;
-  bottom: 400px;
+  background-color: #fcfcfc;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .mobile-middle-con {
+    display: none;
+  }
+  .mobile-slogan {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .mobile-pic-slogan {
+    display: flex;
+    justify-items: center;
+    width: 70%;
+  }
+  .mobile-promo-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-flex1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-flex2 {
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .mobile-navbar {
+    display: none;
+  }
 }

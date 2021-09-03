@@ -10,164 +10,146 @@
 </head>
 <body>
 
-<div class='flex flex-row'>
-<div>
-<img class='eating' src="/assets/eating.png" alt="">
-</div>
-
-<div class="w-screen flex flex-col relative">
-<div class="coffee-login flex">
-  <div class="flex-1">
-    <div class="flex-1 pt-8">
-      <a href="/home-page/home-page.html" class="flex items-center pl-28">
-        <img src="/assets/coffee 1.png" alt="">
-        <p class="pl-3 font-bold text-lg">Coffee Shop</p>
-      </a>
+  <div class="overflow-x-hidden">
+    <div class="flex flex-row bg-gray-100">
+      <div class="md:flex-1">
+        <img class="mobile-bg w-screen object-cover h-screen" src="../assets/eating.png" alt="">
+      </div>
+      <div class="flex-1 flex flex-col">
+        <div class="flex space-y-0 flex-row justify-center items-center md:justify-between md:px-44 py-16">
+          <div class="items-center flex">
+            <p class="font-bold text-lg">
+              Coffee Shop
+            </p>
+          </div>
+          <div class="rounded-full flex justify-center items-center">
+            <a href="../login/login.html" class="w-52 h-10 text-center font-bold text-lg">
+              Sign In
+            </a>
+          </div>
+        </div>
+        <div class="md:flex-1 flex flex-col mr-0 ml-0 justify-center items-center md:px-44 space-y-10">
+          <div class="flex justify-center">
+            <p class="text-3xl tracking-wider font-bold primary-text">Sign Up</p>
+          </div>
+          <div class="mobile-form-con w-full space-y-24">
+            <div class="mobile-form  flex flex-col space-y-10">
+              <label htmlFor class="font-bold text-xl">
+                <p>
+                  Email Address :
+                </p>
+                <input
+                  class="h-16 p-5 rounded-lg w-full outline-none"
+                  type="text"
+                  placeholder="Email">
+              </label>
+            </div>
+            <div class="flex flex-col space-y-10">
+              <label htmlFor class="font-bold text-xl">
+                <p>Password :</p>
+                <input
+                  class="h-16 p-5 rounded-lg w-full outline-none"
+                  type="password"
+                  placeholder="Password">
+              </label>
+            </div>
+            <div class="space-y-10 pb-0">
+              <button class="mobile-form w-full flex justify-center items-center bg-white h-16 rounded-lg login">Sign Up</button>
+              <button class="mobile-form w-full flex justify-center items-center bg-white h-16 rounded-lg inline-block space-x-5">
+                <img src="/assets/googool.png" alt="">
+                <span>Sign Up with Google</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flex-1">
-      <div class="flex justify-end pr-20 relative bottom-5">
-        <a class="login w-44 h-10 pt-2 rounded-full text-center" href="/login/login.html">Login</a>
+    <div class="bg-white footer">
+      <div class="footer-flex1 flex flex-row justify-between px-32 py-36">
+        <div class="flex flex-col space-y-6">
+          <div class="flex flex-row space-x-3 ">
+            <div>
+              <img class="object-cover" src="../assets/coffee 1.png" alt="">
+            </div>
+            <div class="flex items-center">
+              <p class="tracking-wider primary-text font-bold text-lg">Coffee Shop</p>
+            </div>
+          </div>
+          <div class="w-52 tracking-wider">
+            <p>
+              Coffee Shop is a store that sells some good meals,
+              and especially coffee. We provide high quality beans
+            </p>
+          </div>
+          <div class="flex flex-col relative space-x-5 space-y-4">
+            <div class="flex flex-row space-x-5">
+              <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
+                <em class="fab fa-facebook-f"></em>
+              </div>
+              <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
+                <em class="fab fa-twitter"></em>
+              </div>
+              <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
+                <em class="fab fa-instagram"></em>
+              </div>
+            </div>
+            <div class="tracking-wider">
+              <p>
+                ©2020CoffeeStore
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer-flex2 flex flex-row space-x-24 tracking-wider">
+          <div>
+            <div class="flex flex-col">
+              <div class="space-y-2">
+                <p class="font-bold text-xl">
+                  Product
+                </p>
+                <p>
+                  Download
+                </p>
+                <p>
+                  Pricing
+                </p>
+                <p>
+                  Locations
+                </p>
+                <p>
+                  Countries
+                </p>
+                <p>
+                  Blog
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col space-y-2">
+            <p class="font-bold text-xl">
+              Engage
+            </p>
+            <p>
+              Coffee Shop?
+            </p>
+            <p>
+              FAQ
+            </p>
+            <p>
+              About Us
+            </p>
+            <p>
+              Privacy Policy
+            </p>
+            <p>
+              Terms of Service
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-<div class="sign-up-form grid grid-flow-col grid-cols-3 grid-rows-10 justify-items-center relative">
-  <div>
-    <div class="grid text-center pt-10 pl-16">
-      <p class="sign-up-text font-bold text-4xl">Sign Up</p>
-    </div>
-    <div class="grid-col py-44 w-96 leading-10">
-      <form class="grid relative">
-        <label class="font-bold text-xl">Email Address :</label>
-        <input class="form-input h-16 border-2 rounded-lg" type="text"><br><br>
-        <label class="font-bold text-xl">Password :</label>
-        <input class="form-input h-16 border-2 rounded-lg" type="text"><br><br>
-        <label class="font-bold text-xl">Phone Number :</label>
-        <input class="form-input h-16 border-2 rounded-lg" type="text"><br><br>
-      </form>
-      <div class="grid justify-center items-center leading-10 pl-28">
-        <div class="grid justify-center items-center">
-          <div class=" grid-cols-1 p-5">
-            <button id="btn-yellow" class="btn border-2 w-72 text-lg font-bold">Sign Up</button>
-          </div>
-          <div class="grid-cols-1 p-5"> 
-            <button class="btn border-2 w-72 text-lg font-bold">Sign Up with Google
-                <div class="relative w-10 grid justify-center items-center float-left left-32">
-                  <img src="/assets/googool.png" alt=""> 
-              </div>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="member-offer flex flex-col h-60 relative pt-12 rounded-lg shadow-xl justify-center">
-        <div class="absolute leading-10 pl-14 pb-12">
-          <div class="flex w-80">
-            <h1 class="text-4xl font-bold">
-              Get your member card now!
-            </h1>
-          </div>
-          <div class="flex">
-            <p>Let's join with our member and enjoy the deals.</p>
-          </div>
-        </div>
-        <div class="flex justify-end items-center pb-12 pr-10">
-          <button id="btn-yellow" class="w-52 h-16 rounded-md top-28 relative">Create Now</button>
-        </div>
-
-        <div class="flex relative top-64 right-80">
-          <div class="flex flex-row">
-            <div class="flex flex-row">
-              <div>
-                <img src="/assets/coffee 1.png" alt="">
-              </div>
-              <div class="flex-1 pl-3">
-                <p class="font-bold text-xl">Coffee Shop</p>
-                <div class="relative right-9 pt-4 leading-8">
-                  <p>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</p>
-                </div>
-
-                <div class="pt-10 flex flex-col relative space-x-5 space-y-4">
-                  <div class="flex flex-row space-x-5">
-                    <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
-                      <em class="fab fa-facebook-f"></em>
-                    </div>
-                    <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
-                      <em class="fab fa-twitter"></em>
-                  </div>
-                  <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
-                    <em class="fab fa-instagram"></em>
-                  </div>
-                  
-                  </div>
-  
-                  <div class="pt-4 flex text-black">
-                    <p>
-                      ©2020CoffeeStore
-                    </p>
-                  </div>
-              </div>
-              </div>
-
-
-            <div class="flex flex-row pl-96">
-              <div>
-                <div class="pr-44">
-                  <p class="font-bold text-xl">
-                    Product
-                  </p>
-                  <p>
-                    Download
-                  </p>
-                  <p>
-                    Pricing
-                  </p>
-                  <p>
-                    Locations
-                  </p>
-                  <p>
-                    Countries
-                  </p>
-                  <p>
-                    Blog
-                  </p>
-                </div>
-              </div>
-              <div class="flex-1">
-                <div class="w-44">
-                  <p class="font-bold text-xl">
-                    Engage
-                  </p>
-                  <p>
-                    Coffee Shop?
-                  </p>
-                  <p>
-                    FAQ
-                  </p>
-                  <p>
-                    About Us
-                  </p>
-                  <p>
-                    Privacy Policy
-                  </p>
-                  <p>
-                    Terms of Service
-                  </p>
-                </div>
-              </div>
-            </div>        
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  </div>
-
-
-</div>
-
-</div>
 
 </body>
 </html>

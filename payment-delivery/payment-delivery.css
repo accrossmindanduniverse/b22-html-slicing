@@ -2,7 +2,6 @@
   background-image: url('/assets/turkish-coffee.png');background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 1400px;
   opacity: 0.9;
 }
 
@@ -49,6 +48,7 @@ left: 62%;
   background: #6A4029;
   box-shadow: 0px 10px 20px rgba(137, 85, 55, 0.4);
   border-radius: 20px;
+  width: 100%;
 }
 
 .confirm-pay-btn:hover {
@@ -86,4 +86,41 @@ left: 62%;
 .radio input:checked + .item {
   background-color: #FFBA33;
   border: 3px solid #6A4029;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .mobile-delivery-parent {
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+  }
+  .mobile-confirm-pay-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .confirm-pay-btn{
+    width: 300px;
+    height: 60px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-flex1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-flex2 {
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .mobile-navbar {
+    display: none;
+  }
 }

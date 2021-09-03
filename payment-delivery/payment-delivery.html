@@ -15,295 +15,255 @@
 </head>
 <body>
 
-  <div class="banner flex flex-col">
-    
-    <div class="relative bg-white pl-32 h-20 pt-5">
-
-      <div class="flex space-x-80">
-        <div class="flex-1 w-72 relative">
-          <div class="float-left">
-            <img src="/assets/coffee 1.png" alt="">
-          </div>
-          <div>
-            <p class="font-bold text-xl pl-12">
-              Coffee Shop
-            </p>
-          </div>
+  <div class="banner w-screen">
+    <div class="mobile-navbar flex justify-center items-center bg-white">
+      <div class="flex flex-row justify-center space-x-72 items-center ml-14 mr-14 mt-8 mb-8">
+        <div class="flex flex-row justify-center">
+          <img class="object-contain" src="../assets/coffee 1.png" alt="">
+          <p class="font-bold text-xl relative left-3">
+            Coffee Shop
+          </p>
         </div>
-  
-        <nav class="flex flex-row relative right-44">
-          <ul class="flex flex-row">
-            <li class="w-24">
-              <a class="nav-hover" href="/home-page/home-page.html">Home</a>
-            </li>
-            <li class="w-24">
-              <a class="nav-hover" href="/product-cust-1/product-cust-1.html">Product</a>
-            </li>
-            <li class="w-24">
-              <a class="nav-hover" href="/payment-delivery/payment-delivery.html">Your Cart</a>
-            </li>
-            <li class="w-24">
-              <a class="nav-hover" href="/history/history.html">History</a>
-            </li>
-          </ul>
-        </nav>
-  
-        <div class="flex pr-32">
-          <div class="flex-1">
+        <div class="flex flex-row space-x-8 mr-32">
+          <a class="nav-hover" href="/home-page/home-page.html">Home</a>
+          <a class="nav-hover" href="/product-cust-1/product-cust-1.html">Product</a>
+          <a class="nav-hover" href="/payment-delivery/payment-delivery.html">Your Cart</a>
+          <a class="nav-hover" href="/history/history.html">History</a>
+        </div>
+        <div>
             <div class="flex flex-row">
-              <div class="relative">
-                <img src="/assets/vector-search.png" alt="">
+              <a href="/login/login.html" class="flex justify-center items-center font-bold right-7 relative">Sign In</a>
+              <a href="/sign-up/sign-up.html" class="rounded-full flex justify-center items-center primary-btn">
+                <p class="mt-2 mb-2 mr-14 ml-14">Sign Up</p>
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-delivery-parent flex space-y-14 md:space-y-0 md:flex-row md:space-x-32 px-20">
+      <div class="flex flex-col md:mr-96 mt-10 md:mb-24">
+        <p class="font-black text-2xl md:text-4xl text-white md:py-10">Checkout your item now</p>
+        <div class="bg-white rounded-xl shadow-xl w-80 right-14 relative md:right-0 md:w-full">
+          <div class="flex flex-col md:px-10 py-20">
+            <p class="primary-brown-text text-3xl pl-7 md:pl-0 py-4 md:py-0 font-bold">Order Summary</p>
+            <div class="flex flex-col px-12">
+              <div class="flex flex-col space-y-5 border-b-2 py-14 overflow-auto h-72">
+                  <div  class="flex flex-row justify-between">
+                    <div class="flex flex-col space-y-10 md:space-y-0 md:flex-row md:space-x-8">
+                      <div>
+                        <img class="w-20 h-20 rounded-lg object-cover bg-gray-100" src="../assets/cold-brew.png" alt="">
+                      </div>
+                      <div class="flex flex-col space-y-4">
+                        <p class="text-lg font-semibold">Cold Brew</p>
+                        <p class="text-lg font-semibold">
+                          x 1
+                        </p>
+                        <p class="text-lg font-semibold">Regular</p>
+                      </div>
+                    </div>
+                    <div class="flex justify-center relative top-10 md:top-0 items-center md:mr-7">
+                      <p class="text-lg font-semibold">
+                        IDR 30.000
+                      </p>
+                    </div>
+                  </div>
               </div>
-              
+              <div class="flex flex-col space-y-14 pt-10">
+                <div class="flex flex-row space-x-5 md:space-x-0 justify-between">
+                  <div class="flex flex-col space-y-5">
+                    <p class="text-xl font-semibold">SUBTOTAL</p>
+                    <p class="text-xl font-semibold">TAX & FEES</p>
+                    <p class="text-xl font-semibold">SHIPPING</p>
+                  </div>
+                  <div class="flex flex-col space-y-5">
+                    <p class="text-xl font-semibold">
+                      IDR 30.000
+                    </p>
+                    <p class="text-xl font-semibold">
+                      IDR 3.000
+                    </p>
+                    <p class="text-xl font-semibold">
+                      IDR 10.000
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-col md:flex-row justify-between">
+                  <p class="primary-brown-text text-3xl font-bold">TOTAL</p>
+                  <p class="primary-brown-text text-3xl font-bold">
+                    IDR 43.000
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="flex-1 w-44 relative bottom-4">
-            <div class="flex items-center relative top-2">
-              <div class="primary-brown-background h-4 w-4 rounded-full text-center items-center justify-center flex">
-                <p class="text-white text-sm relative text-one">1</p>
+        </div>
+      </div>
+      <div>
+        <div class="flex flex-col space-y-14 mt-24 mb-24">
+          <div class="flex flex-col space-y-7">
+            <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:justify-between md:items-center">
+              <p class="font-black text-white text-2xl">Address Detail</p>
+              <p class="font-black text-white text-xl cursor-pointer">edit</p>
+            </div>
+            <div class="bg-white rounded-xl w-80 relative right-14 md:right-0 md:w-full">
+              <div class="flex-col px-7 py-7">
+                <div class="border-b-2 py-4">
+                  <p class="font-semibold text-xl">
+                    <span class="font-black">Delivery </span>
+                    to Street
+                  </p>
+                </div>
+                <div class="border-b-2 py-4">
+                  <p class="font-semibold text-xl">
+                    street name
+                  </p>
+                </div>
+                <div class="border-b-2 py-4">
+                  <p class="font-semibold text-xl">
+                    phone
+                  </p>
+                </div>
               </div>
+            </div>
+          </div>
+          <div class="flex flex-col space-y-7">
+            <div class="flex items-center">
+              <p class="font-black text-white text-2xl">Payment Method</p>
+            </div>
+            <div class="bg-white rounded-xl w-80 relative right-14 md:right-0 md:w-full">
+              <form>
+                <div class="flex flex-col px-10 md:px-20 py-7 space-y-6">
+                  <div class="border-b-2">
+                    <div class="flex flex-row space-x-3 items-center py-4">
+                      <div class="flex items-center">
+                        <label htmlFor class="radio">
+                          <input type="radio" name="choose-payment" />
+                          <span class="item"></span>
+                        </label>
+                      </div>
+                      <div class="flex flex-row">
+                        <div class="flex items-center w-10 h-10 md:w-14 md:h-14 rounded-lg bg-yellow-500 justify-center">
+                          <AiOutlineBank class="text-white font-bold text-lg md:text-2xl" />
+                        </div>
+                        <div class="flex items-center">
+                          <p class="font-bold text-lg px-4 md:px-14">Bank</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border-b-2">
+                    <div class="flex flex-row space-x-3 items-center py-4">
+                      <div class="flex items-center">
+                        <label htmlFor class="radio">
+                          <input type="radio" name="choose-payment">
+                          <span class="item"></span>
+                        </label>
+                      </div>
+                      <div class="flex flex-row">
+                        <div class="flex items-center w-10 h-10 md:w-14 md:h-14 rounded-lg primary-brown-background justify-center">
+                          <AiOutlineCreditCard class="text-white font-bold text-lg md:text-2xl" />
+                        </div>
+                        <div class="flex items-center">
+                          <p class="font-bold text-lg px-4 md:px-14">Card</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border-b-2">
+                    <div class="flex flex-row space-x-3 items-center py-4">
+                      <div class="flex items-center">
+                        <label htmlFor class="radio">
+                          <input type="radio" name="choose-payment" />
+                          <span class="item"></span>
+                        </label>
+                      </div>
+                      <div class="flex flex-row">
+                        <div class="flex items-center w-10 h-10 md:w-14 md:h-14 rounded-lg bg-yellow-400 justify-center">
+                          <FaTruck class="text-black font-bold text-lg md:text-2xl" />
+                        </div>
+                        <div class="flex items-center">
+                          <p class="font-bold text-lg px-4 md:px-14">Delivery</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div>
+            <div class="mobile-confirm-pay-btn flex md:justify-center md:items-center">
+              <button class="confirm-pay-btn outline-none text-white font-black text-lg md:text-2xl flex items-center md:h-20 justify-center">
+                <p>Confirm And Pay</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white footer">
+      <div class="footer-flex1 flex md:flex-row justify-between md:px-32 py-36">
+        <div class="flex flex-col space-y-6">
+          <div class="flex flex-row space-x-3 ">
+            <div>
+              <img class="object-cover" src="../assets/coffee 1.png" alt="">
             </div>
             <div class="flex items-center">
-              <img src="/assets/chat (1) 1.png" alt="">
+              <p class="tracking-wider primary-text font-bold text-lg">Coffee Shop</p>
             </div>
           </div>
-          <a href='/profile/profile-1.html' class="flex-1 relative bottom-1">
-              <img class="h-10 w-h-10 rounded-full" src="/assets/zulaikha.png" alt="">
-          </a>
-        </div>
-  
-      </div>
-      </div>
-
-    <div class="flex-1 pt-16 pl-24">
-      <p class="checkout-text font-black text-4xl text-white w-72">Checkout your item now!</p>
-    </div>
-
-    <div class="flex-1 flex flex-row summ-primary relative left-32 pb-72 space-x-96">
-
-      <div class="flex-1 flex flex-col bg-white oder-primary rounded-2xl">
-
-        <div class="flex-1 flex justify-center items-center relative">
-          <p class="text-4xl font-black primary-brown-text">Order Summary</p>
-        </div>
-        <div class="flex flex-col pb-32">
-          <div class="flex-1 flex flex-row m-8 text-xl space-y-2">
-            <div class="flex-1">
-              <img class="summ-img rounded-lg" src="/assets/image 36.png" alt="">
-            </div>
-            <div class="flex-1 flex flex-col">
-              <p>Hazelnut latte</p>
-              <p>x1</p>
-              <p>Regular</p>
-            </div>
-            <div class="flex-1 h-20 flex justify-end items-center">
-              <p>IDR 24.0</p>
-            </div>
+          <div class="w-52 tracking-wider">
+            <p>
+              Coffee Shop is a store that sells some good meals,
+              and especially coffee. We provide high quality beans
+            </p>
           </div>
-          <div class="flex-1 flex flex-row m-8 text-xl space-y-2">
-            <div class="flex-1">
-              <img class="summ-img rounded-lg" src="/assets/image 37.png" alt="">
-            </div>
-            <div class="flex-1 flex flex-col">
-              <p>Chicken Fire Wings</p>
-              <p>x2</p>
-            </div>
-            <div class="flex-1 h-16 flex justify-end items-center">
-              <p>IDR 30.0</p>
-            </div>
-          </div>
-          <div class="flex-1 flex flex-row m-8 text-xl space-y-2">
-            <div class="flex-1">
-              <img class="summ-img rounded-lg" src="/assets/image 36.png" alt="">
-            </div>
-            <div class="flex-1 flex flex-col">
-              <p>Hazelnut latte</p>
-              <p>x1</p>
-              <p>Regular</p>
-            </div>
-            <div class="flex-1 h-20 flex justify-end items-center">
-              <p>IDR 24.0</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex-1 flex flex-row m-5 relative bottom-32 border-t-2 pt-5">
-
-          <div class="flex-1 flex flex-col">
-            <div class="text-xl space-y-2">
-              <p>SUBTOTAL</p>
-              <p>TAX & FEES</p>
-              <p>SHIPPING</p>
-            </div>
-            <div class="flex-1 items-end flex">
-              <p class="font-black text-3xl">TOTAL</p>
-            </div>
-          </div>
-
-          <div class="flex-1 flex flex-col relative">
-            <div class="flex-1 flex justify-end">
-              <div class="text-xl space-y-2">
-                <p>IDR 120.000</p>
-                <p>IDR 20.000</p>
-                <p>IDR 10.000</p>
-              </div>
-            </div>
-            <div>
-              <p class="font-black text-3xl flex float-right">IDR 150.000</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-      
-      <div class="flex-1 flex flex-col justify-end items-end space-y-4">
-
-        <div class="flex flex-row space-x-44 w-full">
-          <div class="flex-1">
-            <p class="checkout-text font-black text-white text-3xl">Address details</p>
-          </div>
-          <div class="pr-10">
-            <button class="checkout-text font-black text-white text-2xl">edit</button>
-          </div>
-        </div>
-        <div class="flex flex-col divide-y-2 space-y-10 bg-white w-full h-64 p-8 rounded-xl text-2xl">
-          <div>
-            <p><span class="font-black">Delivery </span>to Iskandar Street</p>
-          </div>
-          <div>
-            <p>Km 5 refinery road oppsite re
-              public road, effurun, Jakarta</p>
-          </div>
-          <div>
-            <p>+62 81348287878</p>
-          </div>
-        </div>
-
-        <div class="w-full h-16 items-center">
-          <p class="checkout-text font-black text-white text-3xl">Payment method</p>
-        </div>
-        <div class="flex-1 flex-col w-full">
-          
-          <div class="bg-white h-full text-2xl pt-10 rounded-xl">
-            <div class="divide-y space-y-20 p-10">
-
-              <div class="flex flex-row space-x-3">
-                <div class="flex items-center">
-                  <label class="radio">
-                    <input type="radio" name="choose-payment">
-                    <span class="item"></span>
-                  </label>
-                </div>
-                  <div class="flex items-center w-14 h-14 rounded-lg bg-yellow-500 text-white justify-center">
-                    <em class=" far fa-credit-card"></em>
-                  </div>
-                  <span class="flex items-center">Bank account<span>
-              </div>
-
-
-              <div class="flex flex-row space-x-3 pt-5">
-                <div class="flex items-center">
-                  <label class="radio">
-                    <input type="radio" name="choose-payment">
-                    <span class="item"></span>
-                  </label>
-                </div>
-                  <div class="flex items-center w-14 h-14 rounded-lg primary-brown-background text-white justify-center">
-                    <em class="fas fa-university"></em>
-                  </div>
-                  <span class="flex items-center">Bank account<span>
-              </div>
-
-
-              <div class="flex flex-row space-x-3 pt-5">
-                <div class="flex items-center">
-                  <label class="radio">
-                    <input type="radio" name="choose-payment">
-                    <span class="item"></span>
-                  </label>
-                </div>
-                  <div class="flex items-center w-14 h-14 rounded-lg bg-yellow-400 justify-center">
-                    <em class="fas fa-truck"></em>
-                  </div>
-                  <span class="flex items-center">Cash on delivery<span>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <button class="w-full h-24 confirm-pay-btn font-bold text-white text-2xl">Confirm and Pay</button>
-
-      </div>
-
-    </div>
-
-    
-
-  </div>
-
-
-  <div class="flex pt-10 pl-24 w-fu bg-white h-96">
-    <div class="flex flex-row">
-      <div class="flex flex-row">
-        <div>
-          <img src="/assets/coffee 1.png" alt="">
-        </div>
-        <div class="pl-3">
-          <p class="font-bold text-xl">Coffee Shop</p>
-          <div class="relative right-9 pt-4 leading-8 w-64">
-            <p>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</p>
-          </div>
-
-          <div class="pt-10 flex flex-col relative space-x-5 space-y-4">
+          <div class="flex flex-col relative space-x-5 space-y-4">
             <div class="flex flex-row space-x-5">
               <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
                 <em class="fab fa-facebook-f"></em>
               </div>
               <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
                 <em class="fab fa-twitter"></em>
+              </div>
+              <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
+                <em class="fab fa-instagram"></em>
+              </div>
             </div>
-            <div class="text-center h-10 w-10 flex items-center justify-center rounded-full bg-yellow-400">
-              <em class="fab fa-instagram"></em>
-            </div>
-            
-            </div>
-
-            <div class="pt-4 flex text-black">
+            <div class="tracking-wider">
               <p>
                 ©2020CoffeeStore
               </p>
             </div>
-        </div>
-        </div>
-
-
-      <div class="flex-1 flex flex-row relative product-and-engage float-right">
-        <div>
-          <div class="pr-44 space-y-2">
-            <p class="font-bold text-xl">
-              Product
-            </p>
-            <p>
-              Download
-            </p>
-            <p>
-              Pricing
-            </p>
-            <p>
-              Locations
-            </p>
-            <p>
-              Countries
-            </p>
-            <p>
-              Blog
-            </p>
           </div>
         </div>
-        <div>
-          <div class="w-44 space-y-2">
+    
+        <div class="footer-flex2 flex md:flex-row space-x-5 md:space-x-24 tracking-wider">
+          <div>
+            <div class="flex flex-col">
+              <div class="space-y-2">
+                <p class="font-bold text-xl">
+                  Product
+                </p>
+                <p>
+                  Download
+                </p>
+                <p>
+                  Pricing
+                </p>
+                <p>
+                  Locations
+                </p>
+                <p>
+                  Countries
+                </p>
+                <p>
+                  Blog
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col space-y-2">
             <p class="font-bold text-xl">
               Engage
             </p>
@@ -324,7 +284,7 @@
             </p>
           </div>
         </div>
-      </div>        
+      </div>
     </div>
   </div>
 
